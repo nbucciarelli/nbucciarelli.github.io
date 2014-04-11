@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
-  <link href="http://nbucciarelli.github.io/atom.xml" rel="self"/>
+  <title><![CDATA[Category: The Iron Yard | My Octopress Blog]]></title>
+  <link href="http://nbucciarelli.github.io/blog/categories/the-iron-yard/atom.xml" rel="self"/>
   <link href="http://nbucciarelli.github.io/"/>
   <updated>2014-04-11T10:32:53-04:00</updated>
   <id>http://nbucciarelli.github.io/</id>
@@ -53,7 +53,7 @@
     <link href="http://nbucciarelli.github.io/blog/2014/01/16/learning-the-right-way/"/>
     <updated>2014-01-16T09:30:11-05:00</updated>
     <id>http://nbucciarelli.github.io/blog/2014/01/16/learning-the-right-way</id>
-    <content type="html"><![CDATA[<p><img src="http://nbucciarelli.github.io/assets/images/2014-01-16-learning-the-right-way/observation.jpg" alt="Observing the master" /></p>
+    <content type="html"><![CDATA[<p><img src="/assets/images/2014-01-16-learning-the-right-way/observation.jpg" alt="Observing the master" /></p>
 
 <p>Hey guys (and gals), I&rsquo;m Nick Bucciarelli (find me on <a href="https://twitter.com/n_bucciarelli">Twitter</a> and <a href="https://github.com/nbucciarelli">GitHub</a>). I write code, I teach code, and I dream code. It&rsquo;s pretty much what I do day in day out!</p>
 
@@ -87,18 +87,7 @@
 
 <h1><a href="http://theironyard.com/academy/rails-engineering/">Join our Charleston Ruby on Rails class!</a></h1>
 
-<p><img src="http://nbucciarelli.github.io/assets/images/2014-01-16-learning-the-right-way/co-work.jpg" alt="Co-working space for students and teachers in Greenville" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Hello World]]></title>
-    <link href="http://nbucciarelli.github.io/blog/2014/01/16/hello-world/"/>
-    <updated>2014-01-16T09:28:45-05:00</updated>
-    <id>http://nbucciarelli.github.io/blog/2014/01/16/hello-world</id>
-    <content type="html"><![CDATA[<p>Naturally, the first of anything for a programmer is Hello World. This is my new blog and I will be posting here priodically.</p>
-
-<p>Hello world!</p>
+<p><img src="/assets/images/2014-01-16-learning-the-right-way/co-work.jpg" alt="Co-working space for students and teachers in Greenville" /></p>
 ]]></content>
   </entry>
   
