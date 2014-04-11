@@ -4,7 +4,7 @@
   <title><![CDATA[Category: The Iron Yard Academy | My Octopress Blog]]></title>
   <link href="http://nbucciarelli.github.io/blog/categories/the-iron-yard-academy/atom.xml" rel="self"/>
   <link href="http://nbucciarelli.github.io/"/>
-  <updated>2014-04-11T10:36:06-04:00</updated>
+  <updated>2014-04-11T10:41:59-04:00</updated>
   <id>http://nbucciarelli.github.io/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -53,7 +53,7 @@
     <link href="http://nbucciarelli.github.io/blog/2014/01/16/learning-the-right-way/"/>
     <updated>2014-01-16T09:30:11-05:00</updated>
     <id>http://nbucciarelli.github.io/blog/2014/01/16/learning-the-right-way</id>
-    <content type="html"><![CDATA[<p><img src="/assets/images/2014-01-16-learning-the-right-way/observation.jpg" alt="Observing the master" /></p>
+    <content type="html"><![CDATA[<p><img src="/images/2014-01-16-learning-the-right-way/observation.jpg" title="&lsquo;Observing the master&rsquo; &lsquo;Observing the master&rsquo;" ></p>
 
 <p>Hey guys (and gals), I&rsquo;m Nick Bucciarelli (find me on <a href="https://twitter.com/n_bucciarelli">Twitter</a> and <a href="https://github.com/nbucciarelli">GitHub</a>). I write code, I teach code, and I dream code. It&rsquo;s pretty much what I do day in day out!</p>
 
@@ -87,7 +87,7 @@
 
 <h1><a href="http://theironyard.com/academy/rails-engineering/">Join our Charleston Ruby on Rails class!</a></h1>
 
-<p><img src="/assets/images/2014-01-16-learning-the-right-way/co-work.jpg" alt="Co-working space for students and teachers in Greenville" /></p>
+<p><img src="/images/2014-01-16-learning-the-right-way/co-work.jpg" title="&lsquo;Co-working space for students and teachers in Greenville&rsquo; &lsquo;Co-working space for students and teachers in Greenville&rsquo;" ></p>
 ]]></content>
   </entry>
   
