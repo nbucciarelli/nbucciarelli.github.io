@@ -162,7 +162,7 @@
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://nbucciarelli.github.io/blog/2014/01/16/learning-the-right-way/" data-via="" data-counturl="http://nbucciarelli.github.io/blog/2014/01/16/learning-the-right-way/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://nbucciarelli.github.io/blog/2014/01/16/learning-the-right-way/" data-via="n_bucciarelli" data-counturl="http://nbucciarelli.github.io/blog/2014/01/16/learning-the-right-way/" >Tweet</a>
   
   
   
@@ -205,6 +205,35 @@
       </li>
     
   </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/nbucciarelli">@nbucciarelli</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'nbucciarelli',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
 </section>
 
 
