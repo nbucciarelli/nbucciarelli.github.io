@@ -934,7 +934,7 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>Let&rsquo;s make an &ldquo;Edit&rdquo; link next for each contact.</p>
+<p>Let&rsquo;s make an &ldquo;Edit&rdquo; link next for each contact with the route we found above.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -957,7 +957,11 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
+<p>Let&rsquo;s refresh and click it.</p>
+
 <p><img src="/images/2014-04-16/20.png" title="Screenshot of stuff" alt="Screenshot of stuff"></p>
+
+<p>Cool. Let&rsquo;s go create that action.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -1000,7 +1004,11 @@
 
 <p></p>
 
+<p>Let&rsquo;s refresh and click the &ldquo;Edit&rdquo; link again.</p>
+
 <p><img src="/images/2014-04-16/21.png" title="Screenshot of stuff" alt="Screenshot of stuff"></p>
+
+<p>Let&rsquo;s create our &ldquo;Edit&rdquo; template now.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='console'><span class='line'><span class="gp">%</span> touch app/views/contacts/edit.html.erb
@@ -1009,6 +1017,8 @@
 
 <p></p>
 
+<p>And let&rsquo;s populate it with something.</p>
+
 <figure class='code'><figcaption><span>+ erb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;h1&gt;</span>Edit Contact<span class="nt">&lt;/h1&gt;</span>
 </span></code></pre></td></tr></table></div></figure>
@@ -1016,7 +1026,11 @@
 
 <p></p>
 
+<p>Refresh the page.</p>
+
 <p><img src="/images/2014-04-16/22.png" title="Screenshot of stuff" alt="Screenshot of stuff"></p>
+
+<p>Woo woo! Let&rsquo;s put a form in there to edit some data.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -1039,7 +1053,11 @@
 
 <p></p>
 
+<p>Refresh and see what happens.</p>
+
 <p><img src="/images/2014-04-16/23.png" title="Screenshot of stuff" alt="Screenshot of stuff"></p>
+
+<p>Now I need to go into my Controller and make that variable.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -1084,9 +1102,15 @@
 
 <p></p>
 
+<p>Refresh and see what happens.</p>
+
 <p><img src="/images/2014-04-16/25.png" title="Screenshot of stuff" alt="Screenshot of stuff"></p>
 
+<p>Let&rsquo;s fill in some data and click the &ldquo;Update Contact&rdquo; button.</p>
+
 <p><img src="/images/2014-04-16/26.png" title="Screenshot of stuff" alt="Screenshot of stuff"></p>
+
+<p>Cool! Let&rsquo;s go put that update action in there.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -1145,7 +1169,11 @@
 
 <p></p>
 
+<p>And submit the data again.</p>
+
 <p><img src="/images/2014-04-16/27.png" title="Screenshot of stuff" alt="Screenshot of stuff"></p>
+
+<p>Woo woo! Let&rsquo;s see what route we want to do  next</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -1174,7 +1202,7 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-
+<p>Let&rsquo;s show each individual contact now:</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>

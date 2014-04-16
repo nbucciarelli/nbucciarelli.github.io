@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Programming | Nick Bucciarelli]]></title>
   <link href="http://nbucciarelli.github.io/blog/categories/programming/atom.xml" rel="self"/>
   <link href="http://nbucciarelli.github.io/"/>
-  <updated>2014-04-16T17:40:38-04:00</updated>
+  <updated>2014-04-16T17:47:19-04:00</updated>
   <id>http://nbucciarelli.github.io/</id>
   <author>
     <name><![CDATA[Nick Bucciarelli]]></name>
@@ -609,7 +609,7 @@ edit_contact GET    /contacts/:id/edit(.:format) contacts#edit</p>
 
 <p>```</p>
 
-<p>Let&rsquo;s make an &ldquo;Edit&rdquo; link next for each contact.</p>
+<p>Let&rsquo;s make an &ldquo;Edit&rdquo; link next for each contact with the route we found above.</p>
 
 <p>``` html+erb</p>
 
@@ -628,7 +628,11 @@ edit_contact GET    /contacts/:id/edit(.:format) contacts#edit</p>
 &lt;% end %>
 ```</p>
 
+<p>Let&rsquo;s refresh and click it.</p>
+
 <p><img src="/images/2014-04-16/20.png" title="&lsquo;Screenshot of stuff&rsquo; &lsquo;Screenshot of stuff&rsquo;" ></p>
+
+<p>Cool. Let&rsquo;s go create that action.</p>
 
 <p>``` ruby
 class ContactsController &lt; ApplicationController
@@ -660,11 +664,17 @@ redirect_to root_path
 end
 ```</p>
 
+<p>Let&rsquo;s refresh and click the &ldquo;Edit&rdquo; link again.</p>
+
 <p><img src="/images/2014-04-16/21.png" title="&lsquo;Screenshot of stuff&rsquo; &lsquo;Screenshot of stuff&rsquo;" ></p>
+
+<p>Let&rsquo;s create our &ldquo;Edit&rdquo; template now.</p>
 
 <p><code>console
 % touch app/views/contacts/edit.html.erb
 </code></p>
+
+<p>And let&rsquo;s populate it with something.</p>
 
 <p>``` html + erb</p>
 
@@ -673,7 +683,11 @@ end
 
 <p>```</p>
 
+<p>Refresh the page.</p>
+
 <p><img src="/images/2014-04-16/22.png" title="&lsquo;Screenshot of stuff&rsquo; &lsquo;Screenshot of stuff&rsquo;" ></p>
+
+<p>Woo woo! Let&rsquo;s put a form in there to edit some data.</p>
 
 <p>``` html+erb</p>
 
@@ -688,7 +702,11 @@ end
 &lt;% end %>
 ```</p>
 
+<p>Refresh and see what happens.</p>
+
 <p><img src="/images/2014-04-16/23.png" title="&lsquo;Screenshot of stuff&rsquo; &lsquo;Screenshot of stuff&rsquo;" ></p>
+
+<p>Now I need to go into my Controller and make that variable.</p>
 
 <p>``` ruby
 class ContactsController &lt; ApplicationController
@@ -724,9 +742,15 @@ redirect_to root_path
 end
 ```</p>
 
+<p>Refresh and see what happens.</p>
+
 <p><img src="/images/2014-04-16/25.png" title="&lsquo;Screenshot of stuff&rsquo; &lsquo;Screenshot of stuff&rsquo;" ></p>
 
+<p>Let&rsquo;s fill in some data and click the &ldquo;Update Contact&rdquo; button.</p>
+
 <p><img src="/images/2014-04-16/26.png" title="&lsquo;Screenshot of stuff&rsquo; &lsquo;Screenshot of stuff&rsquo;" ></p>
+
+<p>Cool! Let&rsquo;s go put that update action in there.</p>
 
 <p>``` ruby
 class ContactsController &lt; ApplicationController</p>
@@ -772,7 +796,11 @@ redirect_to root_path
 end
 ```</p>
 
+<p>And submit the data again.</p>
+
 <p><img src="/images/2014-04-16/27.png" title="&lsquo;Screenshot of stuff&rsquo; &lsquo;Screenshot of stuff&rsquo;" ></p>
+
+<p>Woo woo! Let&rsquo;s see what route we want to do  next</p>
 
 <p>```console
 % rake routes</p>
@@ -793,6 +821,8 @@ edit_contact GET    /contacts/:id/edit(.:format) contacts#edit</p>
 </code></pre>
 
 <p>```</p>
+
+<p>Let&rsquo;s show each individual contact now:</p>
 
 <p>``` html+erb</p>
 
