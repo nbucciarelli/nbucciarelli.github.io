@@ -9,7 +9,12 @@
   <meta name="author" content="Nick Bucciarelli">
 
   
-  <meta name="description" content="Programming is awesome, hands down. I can sit down on a couch, on a beach in lovely Charleston, or on a mountain. I can do it from anywhere and have &hellip;">
+  <meta name="description" content="% cd ~/projects/
+% mkdir contact_list
+% cd contact_list
+% touch .rvmrc
+% sub . ```ruby rvm 2.1@contact_list --create
+``` % cd . picture of RVM output &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -65,6 +70,765 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/04/16/creating-a-basic-rails-application/">Creating a Basic Rails Application</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-04-16T14:27:08-04:00" pubdate data-updated="true">Apr 16<span>th</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><pre><code>% cd ~/projects/
+% mkdir contact_list
+% cd contact_list
+% touch .rvmrc
+% sub .
+</code></pre>
+
+<br>
+
+
+<pre><code>```ruby    
+rvm 2.1@contact_list --create
+```
+</code></pre>
+
+<br>
+
+
+<pre><code>% cd .
+</code></pre>
+
+<p>picture of RVM output here</p>
+
+<pre><code>% gem install rails
+% rails new .
+
+       exist
+      create  README.rdoc
+      create  Rakefile
+      create  config.ru
+      create  .gitignore
+      create  Gemfile
+      create  app
+      create  app/assets/javascripts/application.js
+      create  app/assets/stylesheets/application.css
+      create  app/controllers/application_controller.rb
+      create  app/helpers/application_helper.rb
+      create  app/views/layouts/application.html.erb
+      create  app/assets/images/.keep
+      create  app/mailers/.keep
+      create  app/models/.keep
+      create  app/controllers/concerns/.keep
+      create  app/models/concerns/.keep
+      create  bin
+      create  bin/bundle
+      create  bin/rails
+      create  bin/rake
+      create  config
+      create  config/routes.rb
+      create  config/application.rb
+      create  config/environment.rb
+      create  config/secrets.yml
+      create  config/environments
+      create  config/environments/development.rb
+      create  config/environments/production.rb
+      create  config/environments/test.rb
+      create  config/initializers
+      create  config/initializers/backtrace_silencers.rb
+      create  config/initializers/cookies_serializer.rb
+      create  config/initializers/filter_parameter_logging.rb
+      create  config/initializers/inflections.rb
+      create  config/initializers/mime_types.rb
+      create  config/initializers/session_store.rb
+      create  config/initializers/wrap_parameters.rb
+      create  config/locales
+      create  config/locales/en.yml
+      create  config/boot.rb
+      create  config/database.yml
+      create  db
+      create  db/seeds.rb
+      create  lib
+      create  lib/tasks
+      create  lib/tasks/.keep
+      create  lib/assets
+      create  lib/assets/.keep
+      create  log
+      create  log/.keep
+      create  public
+      create  public/404.html
+      create  public/422.html
+      create  public/500.html
+      create  public/favicon.ico
+      create  public/robots.txt
+      create  test/fixtures
+      create  test/fixtures/.keep
+      create  test/controllers
+      create  test/controllers/.keep
+      create  test/mailers
+      create  test/mailers/.keep
+      create  test/models
+      create  test/models/.keep
+      create  test/helpers
+      create  test/helpers/.keep
+      create  test/integration
+      create  test/integration/.keep
+      create  test/test_helper.rb
+      create  tmp/cache
+      create  tmp/cache/assets
+      create  vendor/assets/javascripts
+      create  vendor/assets/javascripts/.keep
+      create  vendor/assets/stylesheets
+      create  vendor/assets/stylesheets/.keep
+         run  bundle install
+Fetching gem metadata from https://rubygems.org/..........
+Fetching additional metadata from https://rubygems.org/..
+Resolving dependencies...
+Installing rake 10.3.0
+Using i18n 0.6.9
+Using json 1.8.1
+Using minitest 5.3.3
+Using thread_safe 0.3.3
+Using tzinfo 1.1.0
+Using activesupport 4.1.0
+Using builder 3.2.2
+Using erubis 2.7.0
+Using actionview 4.1.0
+Using rack 1.5.2
+Using rack-test 0.6.2
+Using actionpack 4.1.0
+Using mime-types 1.25.1
+Using polyglot 0.3.4
+Using treetop 1.4.15
+Using mail 2.5.4
+Using actionmailer 4.1.0
+Using activemodel 4.1.0
+Using arel 5.0.1.20140414130214
+Using activerecord 4.1.0
+Using bundler 1.6.1
+Installing coffee-script-source 1.7.0
+Installing execjs 2.0.2
+Installing coffee-script 2.2.0
+Using thor 0.19.1
+Using railties 4.1.0
+Installing coffee-rails 4.0.1
+Using hike 1.2.3
+Using multi_json 1.9.2
+Installing jbuilder 2.0.6
+Installing jquery-rails 3.1.0
+Using tilt 1.4.1
+Installing sprockets 2.11.0
+Using sprockets-rails 2.1.3
+Using rails 4.1.0
+Installing rdoc 4.1.1
+Installing sass 3.2.19
+Installing sass-rails 4.0.3
+Installing sdoc 0.4.0
+Installing spring 1.1.2
+Installing sqlite3 1.3.9
+Installing turbolinks 2.2.2
+Installing uglifier 2.5.0
+Your bundle is complete!
+Use `bundle show [gemname]` to see where a bundled gem is installed.
+Post-install message from rdoc:
+Depending on your version of ruby, you may need to install ruby rdoc/ri data:
+
+&lt;= 1.8.6 : unsupported
+ = 1.8.7 : gem install rdoc-data; rdoc-data --install
+ = 1.9.1 : gem install rdoc-data; rdoc-data --install
+&gt;= 1.9.2 : nothing to do! Yay!
+         run  bundle exec spring binstub --all
+* bin/rake: spring inserted
+* bin/rails: spring inserted
+</code></pre>
+
+<p>rails server</p>
+
+<p>screenshot of welcome aboard</p>
+
+<pre><code>```ruby
+Rails.application.routes.draw do
+  root 'home#index'
+end
+```
+</code></pre>
+
+<p>screenshot of uninitialized constant HomeController</p>
+
+<p>rails generate controller home</p>
+
+<pre><code>  create  app/controllers/home_controller.rb
+  invoke  erb
+  create    app/views/home
+  invoke  test_unit
+  create    test/controllers/home_controller_test.rb
+  invoke  helper
+  create    app/helpers/home_helper.rb
+  invoke    test_unit
+  create      test/helpers/home_helper_test.rb
+  invoke  assets
+  invoke    coffee
+  create      app/assets/javascripts/home.js.coffee
+  invoke    scss
+  create      app/assets/stylesheets/home.css.scss
+</code></pre>
+
+<p>screenshot of The action &lsquo;index&rsquo; could not be found for HomeController</p>
+
+<p>class HomeController &lt; ApplicationController
+  def index
+  end
+end</p>
+
+<p>screenshot of missing template</p>
+
+<p>touch app/views/home/index.html.erb</p>
+
+<h1>Yey</h1>
+
+
+<p>Rails.application.routes.draw do
+  root &lsquo;home#index&rsquo;</p>
+
+<p>  resources :contacts
+end</p>
+
+<p>rake routes</p>
+
+<pre><code>  Prefix Verb   URI Pattern                  Controller#Action
+    root GET    /                            home#index
+contacts GET    /contacts(.:format)          contacts#index
+         POST   /contacts(.:format)          contacts#create
+</code></pre>
+
+<p> new_contact GET    /contacts/new(.:format)      contacts#new
+edit_contact GET    /contacts/:id/edit(.:format) contacts#edit</p>
+
+<pre><code> contact GET    /contacts/:id(.:format)      contacts#show
+         PATCH  /contacts/:id(.:format)      contacts#update
+         PUT    /contacts/:id(.:format)      contacts#update
+         DELETE /contacts/:id(.:format)      contacts#destro
+</code></pre>
+
+<p>in index.html.erb
+  <h1>Yey</h1></p>
+
+<p>  &lt;%= link_to &ldquo;New Contact&rdquo;, new_contact_path %></p>
+
+<p>picture of uninitialized constant ContactsController</p>
+
+<p>rails generate controller contacts</p>
+
+<pre><code>  create  app/controllers/contacts_controller.rb
+  invoke  erb
+  create    app/views/contacts
+  invoke  test_unit
+  create    test/controllers/contacts_controller_test.rb
+  invoke  helper
+  create    app/helpers/contacts_helper.rb
+  invoke    test_unit
+  create      test/helpers/contacts_helper_test.rb
+  invoke  assets
+  invoke    coffee
+  create      app/assets/javascripts/contacts.js.coffee
+  invoke    scss
+  create      app/assets/stylesheets/contacts.css.scss
+</code></pre>
+
+<p>screenshot of The action &lsquo;new&rsquo; could not be found for ContactsController</p>
+
+<p>class ContactsController &lt; ApplicationController
+  def new
+  end
+end</p>
+
+<p>Screenshot of template missing</p>
+
+<p>touch app/views/contacts/new.html.erb</p>
+
+<h1>New Contact</h1>
+
+
+<p>&lt;%= form_for @contact do |f| %>
+  &lt;%= f.label :name %>
+  &lt;%= f.text_field :name %>
+  <br>
+  &lt;%= f.submit %>
+&lt;% end %></p>
+
+<p>screenshot of First argument in form cannot contain nil or be empty</p>
+
+<p>class ContactsController &lt; ApplicationController
+  def new</p>
+
+<pre><code>@contact = Contact.new
+</code></pre>
+
+<p>  end
+end</p>
+
+<p>screenshot of uninitialized constant ContactsController::Contact</p>
+
+<p>rails generate model contact</p>
+
+<pre><code>  invoke  active_record
+  create    db/migrate/20140416191313_create_contacts.rb
+  create    app/models/contact.rb
+  invoke    test_unit
+  create      test/models/contact_test.rb
+  create      test/fixtures/contacts.yml
+</code></pre>
+
+<p>screenshot of Migrations are pending.</p>
+
+<p>class CreateContacts &lt; ActiveRecord::Migration
+  def change</p>
+
+<pre><code>create_table :contacts do |t|
+  t.string :name
+  t.timestamps
+end
+</code></pre>
+
+<p>  end
+end</p>
+
+<p>rake db:migrate</p>
+
+<p>== 20140416191313 CreateContacts: migrating ===================================
+&mdash; create_table(:contacts)
+   &ndash;> 0.0014s
+== 20140416191313 CreateContacts: migrated (0.0015s) ==========================</p>
+
+<p>screenshot of form</p>
+
+<p>screenshot of The action &lsquo;create&rsquo; could not be found for ContactsController</p>
+
+<p>class ContactsController &lt; ApplicationController
+  def new</p>
+
+<pre><code>@contact = Contact.new
+</code></pre>
+
+<p>  end</p>
+
+<p>  def create</p>
+
+<pre><code>@contact = Contact.create params[:contact]
+</code></pre>
+
+<p>  end
+end</p>
+
+<p>screenshot of ActiveModel::ForbiddenAttributesError</p>
+
+<p>class ContactsController &lt; ApplicationController
+  def new</p>
+
+<pre><code>@contact = Contact.new
+</code></pre>
+
+<p>  end</p>
+
+<p>  def create</p>
+
+<pre><code>@contact = Contact.create que_params
+</code></pre>
+
+<p>  end</p>
+
+<p>private
+  def que_params</p>
+
+<pre><code>params.require(:contact).permit(:name)
+</code></pre>
+
+<p>  end
+end</p>
+
+<p>screenshot of missing template</p>
+
+<p>class ContactsController &lt; ApplicationController
+  def new</p>
+
+<pre><code>@contact = Contact.new
+</code></pre>
+
+<p>  end</p>
+
+<p>  def create</p>
+
+<pre><code>@contact = Contact.create que_params
+redirect_to root_path
+</code></pre>
+
+<p>  end</p>
+
+<p>private
+  def que_params</p>
+
+<pre><code>params.require(:contact).permit(:name)
+</code></pre>
+
+<p>  end
+end</p>
+
+<p>screenshot of yey with new button and no data</p>
+
+<h1>Yey</h1>
+
+
+<p>&lt;%= link_to &ldquo;New Contact&rdquo;, new_contact_path %></p>
+
+<br>
+
+
+<p>&lt;% @contacts.each do |contact| %>
+  &lt;%= contact.name %>
+  <br>
+&lt;% end %></p>
+
+<p>screenshot of undefined method .each for nil</p>
+
+<p>class HomeController &lt; ApplicationController
+  def index</p>
+
+<pre><code>@contacts = Contact.all
+</code></pre>
+
+<p>  end
+end</p>
+
+<p>screenshot of list of names</p>
+
+<p>rake routes, return is up there!</p>
+
+<h1>Yey</h1>
+
+
+<p>&lt;%= link_to &ldquo;New Contact&rdquo;, new_contact_path %></p>
+
+<br>
+
+
+<p>&lt;% @contacts.each do |contact| %>
+  &lt;%= contact.name %>
+  &lt;%= link_to &ldquo;Edit&rdquo;, edit_contact_path(contact) %>
+  <br>
+&lt;% end %></p>
+
+<p>screenshot of The action &lsquo;edit&rsquo; could not be found</p>
+
+<p>class ContactsController &lt; ApplicationController
+  def new</p>
+
+<pre><code>@contact = Contact.new
+</code></pre>
+
+<p>  end</p>
+
+<p>  def create</p>
+
+<pre><code>@contact = Contact.create que_params
+redirect_to root_path
+</code></pre>
+
+<p>  end</p>
+
+<p>  def edit
+  end</p>
+
+<p>private
+  def que_params</p>
+
+<pre><code>params.require(:contact).permit(:name)
+</code></pre>
+
+<p>  end
+end</p>
+
+<p>screenshot of missing template</p>
+
+<p>touch app/views/contacts/edit.html.erb</p>
+
+<h1>Edit Contact</h1>
+
+
+<p>screenshot of edit page</p>
+
+<h1>Edit Contact</h1>
+
+
+<p>&lt;%= form_for @contact do |f| %>
+  &lt;%= f.label :name %>
+  &lt;%= f.text_field :name %>
+  <br>
+  &lt;%= f.submit %>
+&lt;% end %></p>
+
+<p>screenshot of  argument in form cannot contain nil or be empty</p>
+
+<p>class ContactsController &lt; ApplicationController
+  def new</p>
+
+<pre><code>@contact = Contact.new
+</code></pre>
+
+<p>  end</p>
+
+<p>  def create</p>
+
+<pre><code>@contact = Contact.create que_params
+redirect_to root_path
+</code></pre>
+
+<p>  end</p>
+
+<p>  def edit</p>
+
+<pre><code>@contact = Contact.find params[:id]
+</code></pre>
+
+<p>  end</p>
+
+<p>private
+  def que_params</p>
+
+<pre><code>params.require(:contact).permit(:name)
+</code></pre>
+
+<p>  end
+end</p>
+
+<p>screenshot of working edit form</p>
+
+<p>screenshot of The action &lsquo;update&rsquo; could not be found for ContactsController</p>
+
+<p>class ContactsController &lt; ApplicationController</p>
+
+<p>  def new</p>
+
+<pre><code>@contact = Contact.new
+</code></pre>
+
+<p>  end</p>
+
+<p>  def create</p>
+
+<pre><code>@contact = Contact.create que_params
+redirect_to root_path
+</code></pre>
+
+<p>  end</p>
+
+<p>  def edit</p>
+
+<pre><code>@contact = Contact.find params[:id]
+</code></pre>
+
+<p>  end</p>
+
+<p>  def update</p>
+
+<pre><code>@contact = Contact.find params[:id]
+@contact.update_attributes que_params
+redirect_to root_path
+</code></pre>
+
+<p>  end</p>
+
+<p>private
+  def que_params</p>
+
+<pre><code>params.require(:contact).permit(:name)
+</code></pre>
+
+<p>  end
+end</p>
+
+<p>screenshot of working update</p>
+
+<p>rake routes, return up there</p>
+
+<h1>Yey</h1>
+
+
+<p>&lt;%= link_to &ldquo;New Contact&rdquo;, new_contact_path %></p>
+
+<br>
+
+
+<p>&lt;% @contacts.each do |contact| %>
+  &lt;%= link_to contact.name, contact_path(contact) %>
+  &lt;%= link_to &ldquo;Edit&rdquo;, edit_contact_path(contact) %>
+  <br>
+&lt;% end %></p>
+
+<p>screenshot of The action &lsquo;show&rsquo; could not be found for ContactsController</p>
+
+<p>class ContactsController &lt; ApplicationController
+  def show</p>
+
+<pre><code>@contact = Contact.find params[:id]
+</code></pre>
+
+<p>  end</p>
+
+<p>  def new</p>
+
+<pre><code>@contact = Contact.new
+</code></pre>
+
+<p>  end</p>
+
+<p>  def create</p>
+
+<pre><code>@contact = Contact.create que_params
+redirect_to root_path
+</code></pre>
+
+<p>  end</p>
+
+<p>  def edit</p>
+
+<pre><code>@contact = Contact.find params[:id]
+</code></pre>
+
+<p>  end</p>
+
+<p>  def update</p>
+
+<pre><code>@contact = Contact.find params[:id]
+@contact.update que_params
+redirect_to root_path
+</code></pre>
+
+<p>  end</p>
+
+<p>private
+  def que_params</p>
+
+<pre><code>params.require(:contact).permit(:name)
+</code></pre>
+
+<p>  end
+end</p>
+
+<p>screenshot of missing show template</p>
+
+<p>touch app/views/contacts/show.html.erb</p>
+
+<h1>Show data</h1>
+
+
+<p>&lt;%= @contact.name %></p>
+
+<p>&lt;%= link_to &ldquo;Home&rdquo;, root_path %></p>
+
+<p>rake routes</p>
+
+<h1>Yey</h1>
+
+
+<p>&lt;%= link_to &ldquo;New Contact&rdquo;, new_contact_path %></p>
+
+<br>
+
+
+<p>&lt;% @contacts.each do |contact| %>
+  &lt;%= link_to contact.name, contact_path(contact) %>
+  &lt;%= link_to &ldquo;Edit&rdquo;, edit_contact_path(contact) %>
+  &lt;%= link_to &ldquo;Delete&rdquo;, contact_path(contact), method: :delete %>
+  <br>
+&lt;% end %></p>
+
+<p>screenshot of no action</p>
+
+<p>class ContactsController &lt; ApplicationController
+  def show</p>
+
+<pre><code>@contact = Contact.find params[:id]
+</code></pre>
+
+<p>  end</p>
+
+<p>  def new</p>
+
+<pre><code>@contact = Contact.new
+</code></pre>
+
+<p>  end</p>
+
+<p>  def create</p>
+
+<pre><code>@contact = Contact.create que_params
+redirect_to root_path
+</code></pre>
+
+<p>  end</p>
+
+<p>  def edit</p>
+
+<pre><code>@contact = Contact.find params[:id]
+</code></pre>
+
+<p>  end</p>
+
+<p>  def update</p>
+
+<pre><code>@contact = Contact.find params[:id]
+@contact.update_attributes que_params
+redirect_to root_path
+</code></pre>
+
+<p>  end</p>
+
+<p>  def destroy</p>
+
+<pre><code>@contact = Contact.find params[:id]
+@contact.delete
+redirect_to root_path
+</code></pre>
+
+<p>  end</p>
+
+<p>private
+  def que_params</p>
+
+<pre><code>params.require(:contact).permit(:name)
+</code></pre>
+
+<p>  end
+end</p>
+
+<p>screenshot of no more stuff</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -311,6 +1075,10 @@
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/04/16/creating-a-basic-rails-application/">Creating a Basic Rails Application</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2014/04/11/maintaining-good-balance/">Maintaining Good Balance</a>
