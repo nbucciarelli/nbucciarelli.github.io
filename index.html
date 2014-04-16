@@ -9,12 +9,26 @@
   <meta name="author" content="Nick Bucciarelli">
 
   
-  <meta name="description" content="% cd ~/projects/
+  <meta name="description" content="1
+2
+3
+4
+5
+% cd ~/projects/
 % mkdir contact_list
 % cd contact_list
 % touch .rvmrc
-% sub . ```ruby rvm 2.1@contact_list --create
-``` % cd . picture of RVM output &hellip;">
+% sub . 1
+rvm 2.1@contact_list --create 1
+% cd . 1
+2
+3
+4
+5
+6
+7
+8
+9 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -99,173 +113,326 @@
   </header>
 
 
-  <div class="entry-content"><pre><code>% cd ~/projects/
-% mkdir contact_list
-% cd contact_list
-% touch .rvmrc
-% sub .
-</code></pre>
-
-<br>
-
-
-<pre><code>```ruby    
-rvm 2.1@contact_list --create
-```
-</code></pre>
-
-<br>
+  <div class="entry-content"><figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='console'><span class='line'><span class="gp">%</span> <span class="nb">cd</span> ~/projects/
+</span><span class='line'><span class="gp">%</span> mkdir contact_list
+</span><span class='line'><span class="gp">%</span> <span class="nb">cd </span>contact_list
+</span><span class='line'><span class="gp">%</span> touch .rvmrc
+</span><span class='line'><span class="gp">%</span> sub .
+</span></code></pre></td></tr></table></div></figure>
 
 
-<pre><code>% cd .
-</code></pre>
 
-<p>picture of RVM output here</p>
 
-<pre><code>% gem install rails
-% rails new .
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">rvm</span> <span class="mi">2</span><span class="o">.</span><span class="mi">1</span><span class="vi">@contact_list</span> <span class="o">--</span><span class="n">create</span>
+</span></code></pre></td></tr></table></div></figure>
 
-       exist
-      create  README.rdoc
-      create  Rakefile
-      create  config.ru
-      create  .gitignore
-      create  Gemfile
-      create  app
-      create  app/assets/javascripts/application.js
-      create  app/assets/stylesheets/application.css
-      create  app/controllers/application_controller.rb
-      create  app/helpers/application_helper.rb
-      create  app/views/layouts/application.html.erb
-      create  app/assets/images/.keep
-      create  app/mailers/.keep
-      create  app/models/.keep
-      create  app/controllers/concerns/.keep
-      create  app/models/concerns/.keep
-      create  bin
-      create  bin/bundle
-      create  bin/rails
-      create  bin/rake
-      create  config
-      create  config/routes.rb
-      create  config/application.rb
-      create  config/environment.rb
-      create  config/secrets.yml
-      create  config/environments
-      create  config/environments/development.rb
-      create  config/environments/production.rb
-      create  config/environments/test.rb
-      create  config/initializers
-      create  config/initializers/backtrace_silencers.rb
-      create  config/initializers/cookies_serializer.rb
-      create  config/initializers/filter_parameter_logging.rb
-      create  config/initializers/inflections.rb
-      create  config/initializers/mime_types.rb
-      create  config/initializers/session_store.rb
-      create  config/initializers/wrap_parameters.rb
-      create  config/locales
-      create  config/locales/en.yml
-      create  config/boot.rb
-      create  config/database.yml
-      create  db
-      create  db/seeds.rb
-      create  lib
-      create  lib/tasks
-      create  lib/tasks/.keep
-      create  lib/assets
-      create  lib/assets/.keep
-      create  log
-      create  log/.keep
-      create  public
-      create  public/404.html
-      create  public/422.html
-      create  public/500.html
-      create  public/favicon.ico
-      create  public/robots.txt
-      create  test/fixtures
-      create  test/fixtures/.keep
-      create  test/controllers
-      create  test/controllers/.keep
-      create  test/mailers
-      create  test/mailers/.keep
-      create  test/models
-      create  test/models/.keep
-      create  test/helpers
-      create  test/helpers/.keep
-      create  test/integration
-      create  test/integration/.keep
-      create  test/test_helper.rb
-      create  tmp/cache
-      create  tmp/cache/assets
-      create  vendor/assets/javascripts
-      create  vendor/assets/javascripts/.keep
-      create  vendor/assets/stylesheets
-      create  vendor/assets/stylesheets/.keep
-         run  bundle install
-Fetching gem metadata from https://rubygems.org/..........
-Fetching additional metadata from https://rubygems.org/..
-Resolving dependencies...
-Installing rake 10.3.0
-Using i18n 0.6.9
-Using json 1.8.1
-Using minitest 5.3.3
-Using thread_safe 0.3.3
-Using tzinfo 1.1.0
-Using activesupport 4.1.0
-Using builder 3.2.2
-Using erubis 2.7.0
-Using actionview 4.1.0
-Using rack 1.5.2
-Using rack-test 0.6.2
-Using actionpack 4.1.0
-Using mime-types 1.25.1
-Using polyglot 0.3.4
-Using treetop 1.4.15
-Using mail 2.5.4
-Using actionmailer 4.1.0
-Using activemodel 4.1.0
-Using arel 5.0.1.20140414130214
-Using activerecord 4.1.0
-Using bundler 1.6.1
-Installing coffee-script-source 1.7.0
-Installing execjs 2.0.2
-Installing coffee-script 2.2.0
-Using thor 0.19.1
-Using railties 4.1.0
-Installing coffee-rails 4.0.1
-Using hike 1.2.3
-Using multi_json 1.9.2
-Installing jbuilder 2.0.6
-Installing jquery-rails 3.1.0
-Using tilt 1.4.1
-Installing sprockets 2.11.0
-Using sprockets-rails 2.1.3
-Using rails 4.1.0
-Installing rdoc 4.1.1
-Installing sass 3.2.19
-Installing sass-rails 4.0.3
-Installing sdoc 0.4.0
-Installing spring 1.1.2
-Installing sqlite3 1.3.9
-Installing turbolinks 2.2.2
-Installing uglifier 2.5.0
-Your bundle is complete!
-Use `bundle show [gemname]` to see where a bundled gem is installed.
-Post-install message from rdoc:
-Depending on your version of ruby, you may need to install ruby rdoc/ri data:
 
-&lt;= 1.8.6 : unsupported
- = 1.8.7 : gem install rdoc-data; rdoc-data --install
- = 1.9.1 : gem install rdoc-data; rdoc-data --install
-&gt;= 1.9.2 : nothing to do! Yay!
-         run  bundle exec spring binstub --all
-* bin/rake: spring inserted
-* bin/rails: spring inserted
-</code></pre>
 
-<p>rails server</p>
 
-<p>screenshot of welcome aboard</p>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='console'><span class='line'><span class="gp">%</span> <span class="nb">cd</span> .
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><img src="/images/2014-04-16/1_rvm_output.png" title="Screenshot of stuff" alt="Screenshot of stuff"></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+<span class='line-number'>72</span>
+<span class='line-number'>73</span>
+<span class='line-number'>74</span>
+<span class='line-number'>75</span>
+<span class='line-number'>76</span>
+<span class='line-number'>77</span>
+<span class='line-number'>78</span>
+<span class='line-number'>79</span>
+<span class='line-number'>80</span>
+<span class='line-number'>81</span>
+<span class='line-number'>82</span>
+<span class='line-number'>83</span>
+<span class='line-number'>84</span>
+<span class='line-number'>85</span>
+<span class='line-number'>86</span>
+<span class='line-number'>87</span>
+<span class='line-number'>88</span>
+<span class='line-number'>89</span>
+<span class='line-number'>90</span>
+<span class='line-number'>91</span>
+<span class='line-number'>92</span>
+<span class='line-number'>93</span>
+<span class='line-number'>94</span>
+<span class='line-number'>95</span>
+<span class='line-number'>96</span>
+<span class='line-number'>97</span>
+<span class='line-number'>98</span>
+<span class='line-number'>99</span>
+<span class='line-number'>100</span>
+<span class='line-number'>101</span>
+<span class='line-number'>102</span>
+<span class='line-number'>103</span>
+<span class='line-number'>104</span>
+<span class='line-number'>105</span>
+<span class='line-number'>106</span>
+<span class='line-number'>107</span>
+<span class='line-number'>108</span>
+<span class='line-number'>109</span>
+<span class='line-number'>110</span>
+<span class='line-number'>111</span>
+<span class='line-number'>112</span>
+<span class='line-number'>113</span>
+<span class='line-number'>114</span>
+<span class='line-number'>115</span>
+<span class='line-number'>116</span>
+<span class='line-number'>117</span>
+<span class='line-number'>118</span>
+<span class='line-number'>119</span>
+<span class='line-number'>120</span>
+<span class='line-number'>121</span>
+<span class='line-number'>122</span>
+<span class='line-number'>123</span>
+<span class='line-number'>124</span>
+<span class='line-number'>125</span>
+<span class='line-number'>126</span>
+<span class='line-number'>127</span>
+<span class='line-number'>128</span>
+<span class='line-number'>129</span>
+<span class='line-number'>130</span>
+<span class='line-number'>131</span>
+<span class='line-number'>132</span>
+<span class='line-number'>133</span>
+<span class='line-number'>134</span>
+<span class='line-number'>135</span>
+<span class='line-number'>136</span>
+<span class='line-number'>137</span>
+<span class='line-number'>138</span>
+<span class='line-number'>139</span>
+</pre></td><td class='code'><pre><code class='console'><span class='line'><span class="gp">%</span> gem install rails
+</span><span class='line'><span class="gp">%</span> rails new .
+</span><span class='line'>
+</span><span class='line'><span class="go">       exist</span>
+</span><span class='line'><span class="go">      create  README.rdoc</span>
+</span><span class='line'><span class="go">      create  Rakefile</span>
+</span><span class='line'><span class="go">      create  config.ru</span>
+</span><span class='line'><span class="go">      create  .gitignore</span>
+</span><span class='line'><span class="go">      create  Gemfile</span>
+</span><span class='line'><span class="go">      create  app</span>
+</span><span class='line'><span class="go">      create  app/assets/javascripts/application.js</span>
+</span><span class='line'><span class="go">      create  app/assets/stylesheets/application.css</span>
+</span><span class='line'><span class="go">      create  app/controllers/application_controller.rb</span>
+</span><span class='line'><span class="go">      create  app/helpers/application_helper.rb</span>
+</span><span class='line'><span class="go">      create  app/views/layouts/application.html.erb</span>
+</span><span class='line'><span class="go">      create  app/assets/images/.keep</span>
+</span><span class='line'><span class="go">      create  app/mailers/.keep</span>
+</span><span class='line'><span class="go">      create  app/models/.keep</span>
+</span><span class='line'><span class="go">      create  app/controllers/concerns/.keep</span>
+</span><span class='line'><span class="go">      create  app/models/concerns/.keep</span>
+</span><span class='line'><span class="go">      create  bin</span>
+</span><span class='line'><span class="go">      create  bin/bundle</span>
+</span><span class='line'><span class="go">      create  bin/rails</span>
+</span><span class='line'><span class="go">      create  bin/rake</span>
+</span><span class='line'><span class="go">      create  config</span>
+</span><span class='line'><span class="go">      create  config/routes.rb</span>
+</span><span class='line'><span class="go">      create  config/application.rb</span>
+</span><span class='line'><span class="go">      create  config/environment.rb</span>
+</span><span class='line'><span class="go">      create  config/secrets.yml</span>
+</span><span class='line'><span class="go">      create  config/environments</span>
+</span><span class='line'><span class="go">      create  config/environments/development.rb</span>
+</span><span class='line'><span class="go">      create  config/environments/production.rb</span>
+</span><span class='line'><span class="go">      create  config/environments/test.rb</span>
+</span><span class='line'><span class="go">      create  config/initializers</span>
+</span><span class='line'><span class="go">      create  config/initializers/backtrace_silencers.rb</span>
+</span><span class='line'><span class="go">      create  config/initializers/cookies_serializer.rb</span>
+</span><span class='line'><span class="go">      create  config/initializers/filter_parameter_logging.rb</span>
+</span><span class='line'><span class="go">      create  config/initializers/inflections.rb</span>
+</span><span class='line'><span class="go">      create  config/initializers/mime_types.rb</span>
+</span><span class='line'><span class="go">      create  config/initializers/session_store.rb</span>
+</span><span class='line'><span class="go">      create  config/initializers/wrap_parameters.rb</span>
+</span><span class='line'><span class="go">      create  config/locales</span>
+</span><span class='line'><span class="go">      create  config/locales/en.yml</span>
+</span><span class='line'><span class="go">      create  config/boot.rb</span>
+</span><span class='line'><span class="go">      create  config/database.yml</span>
+</span><span class='line'><span class="go">      create  db</span>
+</span><span class='line'><span class="go">      create  db/seeds.rb</span>
+</span><span class='line'><span class="go">      create  lib</span>
+</span><span class='line'><span class="go">      create  lib/tasks</span>
+</span><span class='line'><span class="go">      create  lib/tasks/.keep</span>
+</span><span class='line'><span class="go">      create  lib/assets</span>
+</span><span class='line'><span class="go">      create  lib/assets/.keep</span>
+</span><span class='line'><span class="go">      create  log</span>
+</span><span class='line'><span class="go">      create  log/.keep</span>
+</span><span class='line'><span class="go">      create  public</span>
+</span><span class='line'><span class="go">      create  public/404.html</span>
+</span><span class='line'><span class="go">      create  public/422.html</span>
+</span><span class='line'><span class="go">      create  public/500.html</span>
+</span><span class='line'><span class="go">      create  public/favicon.ico</span>
+</span><span class='line'><span class="go">      create  public/robots.txt</span>
+</span><span class='line'><span class="go">      create  test/fixtures</span>
+</span><span class='line'><span class="go">      create  test/fixtures/.keep</span>
+</span><span class='line'><span class="go">      create  test/controllers</span>
+</span><span class='line'><span class="go">      create  test/controllers/.keep</span>
+</span><span class='line'><span class="go">      create  test/mailers</span>
+</span><span class='line'><span class="go">      create  test/mailers/.keep</span>
+</span><span class='line'><span class="go">      create  test/models</span>
+</span><span class='line'><span class="go">      create  test/models/.keep</span>
+</span><span class='line'><span class="go">      create  test/helpers</span>
+</span><span class='line'><span class="go">      create  test/helpers/.keep</span>
+</span><span class='line'><span class="go">      create  test/integration</span>
+</span><span class='line'><span class="go">      create  test/integration/.keep</span>
+</span><span class='line'><span class="go">      create  test/test_helper.rb</span>
+</span><span class='line'><span class="go">      create  tmp/cache</span>
+</span><span class='line'><span class="go">      create  tmp/cache/assets</span>
+</span><span class='line'><span class="go">      create  vendor/assets/javascripts</span>
+</span><span class='line'><span class="go">      create  vendor/assets/javascripts/.keep</span>
+</span><span class='line'><span class="go">      create  vendor/assets/stylesheets</span>
+</span><span class='line'><span class="go">      create  vendor/assets/stylesheets/.keep</span>
+</span><span class='line'><span class="go">         run  bundle install</span>
+</span><span class='line'><span class="go">Fetching gem metadata from https://rubygems.org/..........</span>
+</span><span class='line'><span class="go">Fetching additional metadata from https://rubygems.org/..</span>
+</span><span class='line'><span class="go">Resolving dependencies...</span>
+</span><span class='line'><span class="go">Installing rake 10.3.0</span>
+</span><span class='line'><span class="go">Using i18n 0.6.9</span>
+</span><span class='line'><span class="go">Using json 1.8.1</span>
+</span><span class='line'><span class="go">Using minitest 5.3.3</span>
+</span><span class='line'><span class="go">Using thread_safe 0.3.3</span>
+</span><span class='line'><span class="go">Using tzinfo 1.1.0</span>
+</span><span class='line'><span class="go">Using activesupport 4.1.0</span>
+</span><span class='line'><span class="go">Using builder 3.2.2</span>
+</span><span class='line'><span class="go">Using erubis 2.7.0</span>
+</span><span class='line'><span class="go">Using actionview 4.1.0</span>
+</span><span class='line'><span class="go">Using rack 1.5.2</span>
+</span><span class='line'><span class="go">Using rack-test 0.6.2</span>
+</span><span class='line'><span class="go">Using actionpack 4.1.0</span>
+</span><span class='line'><span class="go">Using mime-types 1.25.1</span>
+</span><span class='line'><span class="go">Using polyglot 0.3.4</span>
+</span><span class='line'><span class="go">Using treetop 1.4.15</span>
+</span><span class='line'><span class="go">Using mail 2.5.4</span>
+</span><span class='line'><span class="go">Using actionmailer 4.1.0</span>
+</span><span class='line'><span class="go">Using activemodel 4.1.0</span>
+</span><span class='line'><span class="go">Using arel 5.0.1.20140414130214</span>
+</span><span class='line'><span class="go">Using activerecord 4.1.0</span>
+</span><span class='line'><span class="go">Using bundler 1.6.1</span>
+</span><span class='line'><span class="go">Installing coffee-script-source 1.7.0</span>
+</span><span class='line'><span class="go">Installing execjs 2.0.2</span>
+</span><span class='line'><span class="go">Installing coffee-script 2.2.0</span>
+</span><span class='line'><span class="go">Using thor 0.19.1</span>
+</span><span class='line'><span class="go">Using railties 4.1.0</span>
+</span><span class='line'><span class="go">Installing coffee-rails 4.0.1</span>
+</span><span class='line'><span class="go">Using hike 1.2.3</span>
+</span><span class='line'><span class="go">Using multi_json 1.9.2</span>
+</span><span class='line'><span class="go">Installing jbuilder 2.0.6</span>
+</span><span class='line'><span class="go">Installing jquery-rails 3.1.0</span>
+</span><span class='line'><span class="go">Using tilt 1.4.1</span>
+</span><span class='line'><span class="go">Installing sprockets 2.11.0</span>
+</span><span class='line'><span class="go">Using sprockets-rails 2.1.3</span>
+</span><span class='line'><span class="go">Using rails 4.1.0</span>
+</span><span class='line'><span class="go">Installing rdoc 4.1.1</span>
+</span><span class='line'><span class="go">Installing sass 3.2.19</span>
+</span><span class='line'><span class="go">Installing sass-rails 4.0.3</span>
+</span><span class='line'><span class="go">Installing sdoc 0.4.0</span>
+</span><span class='line'><span class="go">Installing spring 1.1.2</span>
+</span><span class='line'><span class="go">Installing sqlite3 1.3.9</span>
+</span><span class='line'><span class="go">Installing turbolinks 2.2.2</span>
+</span><span class='line'><span class="go">Installing uglifier 2.5.0</span>
+</span><span class='line'><span class="go">Your bundle is complete!</span>
+</span><span class='line'><span class="go">Use `bundle show [gemname]` to see where a bundled gem is installed.</span>
+</span><span class='line'><span class="go">Post-install message from rdoc:</span>
+</span><span class='line'><span class="go">Depending on your version of ruby, you may need to install ruby rdoc/ri data:</span>
+</span><span class='line'>
+</span><span class='line'><span class="go">&lt;= 1.8.6 : unsupported</span>
+</span><span class='line'><span class="go"> = 1.8.7 : gem install rdoc-data; rdoc-data --install</span>
+</span><span class='line'><span class="go"> = 1.9.1 : gem install rdoc-data; rdoc-data --install</span>
+</span><span class='line'><span class="gp">&gt;</span><span class="o">=</span> 1.9.2 : nothing to <span class="k">do</span>! Yay!
+</span><span class='line'><span class="go">         run  bundle exec spring binstub --all</span>
+</span><span class='line'><span class="go">* bin/rake: spring inserted</span>
+</span><span class='line'><span class="go">* bin/rails: spring inserted</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='console'><span class='line'><span class="gp">%</span> rails server
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p><img src="/images/2014-04-16/2_welcome_aboard.png" title="Screenshot of stuff" alt="Screenshot of stuff"></p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -276,555 +443,918 @@ Depending on your version of ruby, you may need to install ruby rdoc/ri data:
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>screenshot of uninitialized constant HomeController</p>
-
-<p>rails generate controller home</p>
-
-<pre><code>  create  app/controllers/home_controller.rb
-  invoke  erb
-  create    app/views/home
-  invoke  test_unit
-  create    test/controllers/home_controller_test.rb
-  invoke  helper
-  create    app/helpers/home_helper.rb
-  invoke    test_unit
-  create      test/helpers/home_helper_test.rb
-  invoke  assets
-  invoke    coffee
-  create      app/assets/javascripts/home.js.coffee
-  invoke    scss
-  create      app/assets/stylesheets/home.css.scss
-</code></pre>
-
-<p>screenshot of The action &lsquo;index&rsquo; could not be found for HomeController</p>
-
-<p>class HomeController &lt; ApplicationController
-  def index
-  end
-end</p>
-
-<p>screenshot of missing template</p>
-
-<p>touch app/views/home/index.html.erb</p>
-
-<h1>Yey</h1>
-
-
-<p>Rails.application.routes.draw do
-  root &lsquo;home#index&rsquo;</p>
-
-<p>  resources :contacts
-end</p>
-
-<p>rake routes</p>
-
-<pre><code>  Prefix Verb   URI Pattern                  Controller#Action
-    root GET    /                            home#index
-contacts GET    /contacts(.:format)          contacts#index
-         POST   /contacts(.:format)          contacts#create
-</code></pre>
-
-<p> new_contact GET    /contacts/new(.:format)      contacts#new
-edit_contact GET    /contacts/:id/edit(.:format) contacts#edit</p>
-
-<pre><code> contact GET    /contacts/:id(.:format)      contacts#show
-         PATCH  /contacts/:id(.:format)      contacts#update
-         PUT    /contacts/:id(.:format)      contacts#update
-         DELETE /contacts/:id(.:format)      contacts#destro
-</code></pre>
-
-<p>in index.html.erb
-  <h1>Yey</h1></p>
-
-<p>  &lt;%= link_to &ldquo;New Contact&rdquo;, new_contact_path %></p>
-
-<p>picture of uninitialized constant ContactsController</p>
-
-<p>rails generate controller contacts</p>
-
-<pre><code>  create  app/controllers/contacts_controller.rb
-  invoke  erb
-  create    app/views/contacts
-  invoke  test_unit
-  create    test/controllers/contacts_controller_test.rb
-  invoke  helper
-  create    app/helpers/contacts_helper.rb
-  invoke    test_unit
-  create      test/helpers/contacts_helper_test.rb
-  invoke  assets
-  invoke    coffee
-  create      app/assets/javascripts/contacts.js.coffee
-  invoke    scss
-  create      app/assets/stylesheets/contacts.css.scss
-</code></pre>
-
-<p>screenshot of The action &lsquo;new&rsquo; could not be found for ContactsController</p>
-
-<p>class ContactsController &lt; ApplicationController
-  def new
-  end
-end</p>
-
-<p>Screenshot of template missing</p>
-
-<p>touch app/views/contacts/new.html.erb</p>
-
-<h1>New Contact</h1>
-
-
-<p>&lt;%= form_for @contact do |f| %>
-  &lt;%= f.label :name %>
-  &lt;%= f.text_field :name %>
-  <br>
-  &lt;%= f.submit %>
-&lt;% end %></p>
-
-<p>screenshot of First argument in form cannot contain nil or be empty</p>
-
-<p>class ContactsController &lt; ApplicationController
-  def new</p>
-
-<pre><code>@contact = Contact.new
-</code></pre>
-
-<p>  end
-end</p>
-
-<p>screenshot of uninitialized constant ContactsController::Contact</p>
-
-<p>rails generate model contact</p>
-
-<pre><code>  invoke  active_record
-  create    db/migrate/20140416191313_create_contacts.rb
-  create    app/models/contact.rb
-  invoke    test_unit
-  create      test/models/contact_test.rb
-  create      test/fixtures/contacts.yml
-</code></pre>
-
-<p>screenshot of Migrations are pending.</p>
-
-<p>class CreateContacts &lt; ActiveRecord::Migration
-  def change</p>
-
-<pre><code>create_table :contacts do |t|
-  t.string :name
-  t.timestamps
-end
-</code></pre>
-
-<p>  end
-end</p>
-
-<p>rake db:migrate</p>
-
-<p>== 20140416191313 CreateContacts: migrating ===================================
-&mdash; create_table(:contacts)
-   &ndash;> 0.0014s
-== 20140416191313 CreateContacts: migrated (0.0015s) ==========================</p>
-
-<p>screenshot of form</p>
-
-<p>screenshot of The action &lsquo;create&rsquo; could not be found for ContactsController</p>
-
-<p>class ContactsController &lt; ApplicationController
-  def new</p>
-
-<pre><code>@contact = Contact.new
-</code></pre>
-
-<p>  end</p>
-
-<p>  def create</p>
-
-<pre><code>@contact = Contact.create params[:contact]
-</code></pre>
-
-<p>  end
-end</p>
-
-<p>screenshot of ActiveModel::ForbiddenAttributesError</p>
-
-<p>class ContactsController &lt; ApplicationController
-  def new</p>
-
-<pre><code>@contact = Contact.new
-</code></pre>
-
-<p>  end</p>
-
-<p>  def create</p>
-
-<pre><code>@contact = Contact.create que_params
-</code></pre>
-
-<p>  end</p>
-
-<p>private
-  def que_params</p>
-
-<pre><code>params.require(:contact).permit(:name)
-</code></pre>
-
-<p>  end
-end</p>
-
-<p>screenshot of missing template</p>
-
-<p>class ContactsController &lt; ApplicationController
-  def new</p>
-
-<pre><code>@contact = Contact.new
-</code></pre>
-
-<p>  end</p>
-
-<p>  def create</p>
-
-<pre><code>@contact = Contact.create que_params
-redirect_to root_path
-</code></pre>
-
-<p>  end</p>
-
-<p>private
-  def que_params</p>
-
-<pre><code>params.require(:contact).permit(:name)
-</code></pre>
-
-<p>  end
-end</p>
-
-<p>screenshot of yey with new button and no data</p>
-
-<h1>Yey</h1>
-
-
-<p>&lt;%= link_to &ldquo;New Contact&rdquo;, new_contact_path %></p>
-
-<br>
-
-
-<p>&lt;% @contacts.each do |contact| %>
-  &lt;%= contact.name %>
-  <br>
-&lt;% end %></p>
-
-<p>screenshot of undefined method .each for nil</p>
-
-<p>class HomeController &lt; ApplicationController
-  def index</p>
-
-<pre><code>@contacts = Contact.all
-</code></pre>
-
-<p>  end
-end</p>
-
-<p>screenshot of list of names</p>
-
-<p>rake routes, return is up there!</p>
-
-<h1>Yey</h1>
-
-
-<p>&lt;%= link_to &ldquo;New Contact&rdquo;, new_contact_path %></p>
-
-<br>
-
-
-<p>&lt;% @contacts.each do |contact| %>
-  &lt;%= contact.name %>
-  &lt;%= link_to &ldquo;Edit&rdquo;, edit_contact_path(contact) %>
-  <br>
-&lt;% end %></p>
-
-<p>screenshot of The action &lsquo;edit&rsquo; could not be found</p>
-
-<p>class ContactsController &lt; ApplicationController
-  def new</p>
-
-<pre><code>@contact = Contact.new
-</code></pre>
-
-<p>  end</p>
-
-<p>  def create</p>
-
-<pre><code>@contact = Contact.create que_params
-redirect_to root_path
-</code></pre>
-
-<p>  end</p>
-
-<p>  def edit
-  end</p>
-
-<p>private
-  def que_params</p>
-
-<pre><code>params.require(:contact).permit(:name)
-</code></pre>
-
-<p>  end
-end</p>
-
-<p>screenshot of missing template</p>
-
-<p>touch app/views/contacts/edit.html.erb</p>
-
-<h1>Edit Contact</h1>
-
-
-<p>screenshot of edit page</p>
-
-<h1>Edit Contact</h1>
-
-
-<p>&lt;%= form_for @contact do |f| %>
-  &lt;%= f.label :name %>
-  &lt;%= f.text_field :name %>
-  <br>
-  &lt;%= f.submit %>
-&lt;% end %></p>
-
-<p>screenshot of  argument in form cannot contain nil or be empty</p>
-
-<p>class ContactsController &lt; ApplicationController
-  def new</p>
-
-<pre><code>@contact = Contact.new
-</code></pre>
-
-<p>  end</p>
-
-<p>  def create</p>
-
-<pre><code>@contact = Contact.create que_params
-redirect_to root_path
-</code></pre>
-
-<p>  end</p>
-
-<p>  def edit</p>
-
-<pre><code>@contact = Contact.find params[:id]
-</code></pre>
-
-<p>  end</p>
-
-<p>private
-  def que_params</p>
-
-<pre><code>params.require(:contact).permit(:name)
-</code></pre>
-
-<p>  end
-end</p>
-
-<p>screenshot of working edit form</p>
-
-<p>screenshot of The action &lsquo;update&rsquo; could not be found for ContactsController</p>
-
-<p>class ContactsController &lt; ApplicationController</p>
-
-<p>  def new</p>
-
-<pre><code>@contact = Contact.new
-</code></pre>
-
-<p>  end</p>
-
-<p>  def create</p>
-
-<pre><code>@contact = Contact.create que_params
-redirect_to root_path
-</code></pre>
-
-<p>  end</p>
-
-<p>  def edit</p>
-
-<pre><code>@contact = Contact.find params[:id]
-</code></pre>
-
-<p>  end</p>
-
-<p>  def update</p>
-
-<pre><code>@contact = Contact.find params[:id]
-@contact.update_attributes que_params
-redirect_to root_path
-</code></pre>
-
-<p>  end</p>
-
-<p>private
-  def que_params</p>
-
-<pre><code>params.require(:contact).permit(:name)
-</code></pre>
-
-<p>  end
-end</p>
-
-<p>screenshot of working update</p>
-
-<p>rake routes, return up there</p>
-
-<h1>Yey</h1>
-
-
-<p>&lt;%= link_to &ldquo;New Contact&rdquo;, new_contact_path %></p>
-
-<br>
-
-
-<p>&lt;% @contacts.each do |contact| %>
-  &lt;%= link_to contact.name, contact_path(contact) %>
-  &lt;%= link_to &ldquo;Edit&rdquo;, edit_contact_path(contact) %>
-  <br>
-&lt;% end %></p>
-
-<p>screenshot of The action &lsquo;show&rsquo; could not be found for ContactsController</p>
-
-<p>class ContactsController &lt; ApplicationController
-  def show</p>
-
-<pre><code>@contact = Contact.find params[:id]
-</code></pre>
-
-<p>  end</p>
-
-<p>  def new</p>
-
-<pre><code>@contact = Contact.new
-</code></pre>
-
-<p>  end</p>
-
-<p>  def create</p>
-
-<pre><code>@contact = Contact.create que_params
-redirect_to root_path
-</code></pre>
-
-<p>  end</p>
-
-<p>  def edit</p>
-
-<pre><code>@contact = Contact.find params[:id]
-</code></pre>
-
-<p>  end</p>
-
-<p>  def update</p>
-
-<pre><code>@contact = Contact.find params[:id]
-@contact.update que_params
-redirect_to root_path
-</code></pre>
-
-<p>  end</p>
-
-<p>private
-  def que_params</p>
-
-<pre><code>params.require(:contact).permit(:name)
-</code></pre>
-
-<p>  end
-end</p>
-
-<p>screenshot of missing show template</p>
-
-<p>touch app/views/contacts/show.html.erb</p>
-
-<h1>Show data</h1>
-
-
-<p>&lt;%= @contact.name %></p>
-
-<p>&lt;%= link_to &ldquo;Home&rdquo;, root_path %></p>
-
-<p>rake routes</p>
-
-<h1>Yey</h1>
-
-
-<p>&lt;%= link_to &ldquo;New Contact&rdquo;, new_contact_path %></p>
-
-<br>
-
-
-<p>&lt;% @contacts.each do |contact| %>
-  &lt;%= link_to contact.name, contact_path(contact) %>
-  &lt;%= link_to &ldquo;Edit&rdquo;, edit_contact_path(contact) %>
-  &lt;%= link_to &ldquo;Delete&rdquo;, contact_path(contact), method: :delete %>
-  <br>
-&lt;% end %></p>
-
-<p>screenshot of no action</p>
-
-<p>class ContactsController &lt; ApplicationController
-  def show</p>
-
-<pre><code>@contact = Contact.find params[:id]
-</code></pre>
-
-<p>  end</p>
-
-<p>  def new</p>
-
-<pre><code>@contact = Contact.new
-</code></pre>
-
-<p>  end</p>
-
-<p>  def create</p>
-
-<pre><code>@contact = Contact.create que_params
-redirect_to root_path
-</code></pre>
-
-<p>  end</p>
-
-<p>  def edit</p>
-
-<pre><code>@contact = Contact.find params[:id]
-</code></pre>
-
-<p>  end</p>
-
-<p>  def update</p>
-
-<pre><code>@contact = Contact.find params[:id]
-@contact.update_attributes que_params
-redirect_to root_path
-</code></pre>
-
-<p>  end</p>
-
-<p>  def destroy</p>
-
-<pre><code>@contact = Contact.find params[:id]
-@contact.delete
-redirect_to root_path
-</code></pre>
-
-<p>  end</p>
-
-<p>private
-  def que_params</p>
-
-<pre><code>params.require(:contact).permit(:name)
-</code></pre>
-
-<p>  end
-end</p>
-
-<p>screenshot of no more stuff</p>
+<p><img src="/images/2014-04-16/3_no_home_controller.png" title="Screenshot of stuff" alt="Screenshot of stuff"></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+</pre></td><td class='code'><pre><code class='console'><span class='line'><span class="go">rails generate controller home</span>
+</span><span class='line'>
+</span><span class='line'><span class="go">      create  app/controllers/home_controller.rb</span>
+</span><span class='line'><span class="go">      invoke  erb</span>
+</span><span class='line'><span class="go">      create    app/views/home</span>
+</span><span class='line'><span class="go">      invoke  test_unit</span>
+</span><span class='line'><span class="go">      create    test/controllers/home_controller_test.rb</span>
+</span><span class='line'><span class="go">      invoke  helper</span>
+</span><span class='line'><span class="go">      create    app/helpers/home_helper.rb</span>
+</span><span class='line'><span class="go">      invoke    test_unit</span>
+</span><span class='line'><span class="go">      create      test/helpers/home_helper_test.rb</span>
+</span><span class='line'><span class="go">      invoke  assets</span>
+</span><span class='line'><span class="go">      invoke    coffee</span>
+</span><span class='line'><span class="go">      create      app/assets/javascripts/home.js.coffee</span>
+</span><span class='line'><span class="go">      invoke    scss</span>
+</span><span class='line'><span class="go">      create      app/assets/stylesheets/home.css.scss</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><img src="/images/2014-04-16/4_no_index_in_home_controller.png" title="Screenshot of stuff" alt="Screenshot of stuff"></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">HomeController</span> <span class="o">&lt;</span> <span class="no">ApplicationController</span>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">index</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><img src="/images/2014-04-16/5_missing_index_template.png" title="Screenshot of stuff" alt="Screenshot of stuff"></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='console'><span class='line'><span class="go">touch app/views/home/index.html.erb</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;h1&gt;</span>Yey<span class="nt">&lt;/h1&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="no">Rails</span><span class="o">.</span><span class="n">application</span><span class="o">.</span><span class="n">routes</span><span class="o">.</span><span class="n">draw</span> <span class="k">do</span>
+</span><span class='line'>  <span class="n">root</span> <span class="s1">&#39;home#index&#39;</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">resources</span> <span class="ss">:contacts</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+</pre></td><td class='code'><pre><code class='console'><span class='line'><span class="gp">%</span> rake routes
+</span><span class='line'>
+</span><span class='line'><span class="go">      Prefix Verb   URI Pattern                  Controller#Action</span>
+</span><span class='line'><span class="go">        root GET    /                            home#index</span>
+</span><span class='line'><span class="go">    contacts GET    /contacts(.:format)          contacts#index</span>
+</span><span class='line'><span class="go">             POST   /contacts(.:format)          contacts#create</span>
+</span><span class='line'><span class="go"> new_contact GET    /contacts/new(.:format)      contacts#new</span>
+</span><span class='line'><span class="go">edit_contact GET    /contacts/:id/edit(.:format) contacts#edit</span>
+</span><span class='line'><span class="go">     contact GET    /contacts/:id(.:format)      contacts#show</span>
+</span><span class='line'><span class="go">             PATCH  /contacts/:id(.:format)      contacts#update</span>
+</span><span class='line'><span class="go">             PUT    /contacts/:id(.:format)      contacts#update</span>
+</span><span class='line'><span class="go">             DELETE /contacts/:id(.:format)      contacts#destro</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>in index.html.erb</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='html+erb'><span class='line'>  <span class="nt">&lt;h1&gt;</span>Yey<span class="nt">&lt;/h1&gt;</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="cp">&lt;%=</span> <span class="n">link_to</span> <span class="s2">&quot;New Contact&quot;</span><span class="p">,</span> <span class="n">new_contact_path</span> <span class="cp">%&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><img src="/images/2014-04-16/6_no_contacts_controller.png" title="Screenshot of stuff" alt="Screenshot of stuff"></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+</pre></td><td class='code'><pre><code class='console'><span class='line'><span class="go">rails generate controller contacts</span>
+</span><span class='line'>
+</span><span class='line'><span class="go">      create  app/controllers/contacts_controller.rb</span>
+</span><span class='line'><span class="go">      invoke  erb</span>
+</span><span class='line'><span class="go">      create    app/views/contacts</span>
+</span><span class='line'><span class="go">      invoke  test_unit</span>
+</span><span class='line'><span class="go">      create    test/controllers/contacts_controller_test.rb</span>
+</span><span class='line'><span class="go">      invoke  helper</span>
+</span><span class='line'><span class="go">      create    app/helpers/contacts_helper.rb</span>
+</span><span class='line'><span class="go">      invoke    test_unit</span>
+</span><span class='line'><span class="go">      create      test/helpers/contacts_helper_test.rb</span>
+</span><span class='line'><span class="go">      invoke  assets</span>
+</span><span class='line'><span class="go">      invoke    coffee</span>
+</span><span class='line'><span class="go">      create      app/assets/javascripts/contacts.js.coffee</span>
+</span><span class='line'><span class="go">      invoke    scss</span>
+</span><span class='line'><span class="go">      create      app/assets/stylesheets/contacts.css.scss</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><img src="/images/2014-04-16/7_no_new_action_in_contacts_controller.png" title="Screenshot of stuff" alt="Screenshot of stuff"></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">ContactsController</span> <span class="o">&lt;</span> <span class="no">ApplicationController</span>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">new</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><img src="/images/2014-04-16/8_missing_new_template.png" title="Screenshot of stuff" alt="Screenshot of stuff"></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='console'><span class='line'><span class="gp">%</span> touch app/views/contacts/new.html.erb
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='html+erb'><span class='line'><span class="nt">&lt;h1&gt;</span>New Contact<span class="nt">&lt;/h1&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="cp">&lt;%=</span> <span class="n">form_for</span> <span class="vi">@contact</span> <span class="k">do</span> <span class="o">|</span><span class="n">f</span><span class="o">|</span> <span class="cp">%&gt;</span>
+</span><span class='line'>  <span class="cp">&lt;%=</span> <span class="n">f</span><span class="o">.</span><span class="n">label</span> <span class="ss">:name</span> <span class="cp">%&gt;</span>
+</span><span class='line'>  <span class="cp">&lt;%=</span> <span class="n">f</span><span class="o">.</span><span class="n">text_field</span> <span class="ss">:name</span> <span class="cp">%&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;br&gt;</span>
+</span><span class='line'>  <span class="cp">&lt;%=</span> <span class="n">f</span><span class="o">.</span><span class="n">submit</span> <span class="cp">%&gt;</span>
+</span><span class='line'><span class="cp">&lt;%</span> <span class="k">end</span> <span class="cp">%&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><img src="/images/2014-04-16/9.png" title="Screenshot of stuff" alt="Screenshot of stuff"></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">ContactsController</span> <span class="o">&lt;</span> <span class="no">ApplicationController</span>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">new</span>
+</span><span class='line'>    <span class="vi">@contact</span> <span class="o">=</span> <span class="no">Contact</span><span class="o">.</span><span class="n">new</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><img src="/images/2014-04-16/10.png" title="Screenshot of stuff" alt="Screenshot of stuff"></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='console'><span class='line'><span class="gp">%</span> rails generate model contact
+</span><span class='line'><span class="go">      invoke  active_record</span>
+</span><span class='line'><span class="go">      create    db/migrate/20140416191313_create_contacts.rb</span>
+</span><span class='line'><span class="go">      create    app/models/contact.rb</span>
+</span><span class='line'><span class="go">      invoke    test_unit</span>
+</span><span class='line'><span class="go">      create      test/models/contact_test.rb</span>
+</span><span class='line'><span class="go">      create      test/fixtures/contacts.yml</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><img src="/images/2014-04-16/11.png" title="Screenshot of stuff" alt="Screenshot of stuff"></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">CreateContacts</span> <span class="o">&lt;</span> <span class="ss">ActiveRecord</span><span class="p">:</span><span class="ss">:Migration</span>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">change</span>
+</span><span class='line'>    <span class="n">create_table</span> <span class="ss">:contacts</span> <span class="k">do</span> <span class="o">|</span><span class="n">t</span><span class="o">|</span>
+</span><span class='line'>      <span class="n">t</span><span class="o">.</span><span class="n">string</span> <span class="ss">:name</span>
+</span><span class='line'>      <span class="n">t</span><span class="o">.</span><span class="n">timestamps</span>
+</span><span class='line'>    <span class="k">end</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='console'><span class='line'><span class="gp">%</span> rake db:migrate
+</span><span class='line'>
+</span><span class='line'><span class="go">== 20140416191313 CreateContacts: migrating ===================================</span>
+</span><span class='line'><span class="go">-- create_table(:contacts)</span>
+</span><span class='line'><span class="go">   -&gt; 0.0014s</span>
+</span><span class='line'><span class="go">== 20140416191313 CreateContacts: migrated (0.0015s) ==========================</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><img src="/images/2014-04-16/12.png" title="Screenshot of stuff" alt="Screenshot of stuff"></p>
+
+<p><img src="/images/2014-04-16/13.png" title="Screenshot of stuff" alt="Screenshot of stuff"></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">ContactsController</span> <span class="o">&lt;</span> <span class="no">ApplicationController</span>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">new</span>
+</span><span class='line'>    <span class="vi">@contact</span> <span class="o">=</span> <span class="no">Contact</span><span class="o">.</span><span class="n">new</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">create</span>
+</span><span class='line'>    <span class="vi">@contact</span> <span class="o">=</span> <span class="no">Contact</span><span class="o">.</span><span class="n">create</span> <span class="n">params</span><span class="o">[</span><span class="ss">:contact</span><span class="o">]</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><img src="/images/2014-04-16/14.png" title="Screenshot of stuff" alt="Screenshot of stuff"></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">ContactsController</span> <span class="o">&lt;</span> <span class="no">ApplicationController</span>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">new</span>
+</span><span class='line'>    <span class="vi">@contact</span> <span class="o">=</span> <span class="no">Contact</span><span class="o">.</span><span class="n">new</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">create</span>
+</span><span class='line'>    <span class="vi">@contact</span> <span class="o">=</span> <span class="no">Contact</span><span class="o">.</span><span class="n">create</span> <span class="n">que_params</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="kp">private</span>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">que_params</span>
+</span><span class='line'>    <span class="n">params</span><span class="o">.</span><span class="n">require</span><span class="p">(</span><span class="ss">:contact</span><span class="p">)</span><span class="o">.</span><span class="n">permit</span><span class="p">(</span><span class="ss">:name</span><span class="p">)</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><img src="/images/2014-04-16/15.png" title="Screenshot of stuff" alt="Screenshot of stuff"></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">ContactsController</span> <span class="o">&lt;</span> <span class="no">ApplicationController</span>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">new</span>
+</span><span class='line'>    <span class="vi">@contact</span> <span class="o">=</span> <span class="no">Contact</span><span class="o">.</span><span class="n">new</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">create</span>
+</span><span class='line'>    <span class="vi">@contact</span> <span class="o">=</span> <span class="no">Contact</span><span class="o">.</span><span class="n">create</span> <span class="n">que_params</span>
+</span><span class='line'>    <span class="n">redirect_to</span> <span class="n">root_path</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="kp">private</span>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">que_params</span>
+</span><span class='line'>    <span class="n">params</span><span class="o">.</span><span class="n">require</span><span class="p">(</span><span class="ss">:contact</span><span class="p">)</span><span class="o">.</span><span class="n">permit</span><span class="p">(</span><span class="ss">:name</span><span class="p">)</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><img src="/images/2014-04-16/16.png" title="Screenshot of stuff" alt="Screenshot of stuff"></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='html+erb'><span class='line'><span class="nt">&lt;h1&gt;</span>Yey<span class="nt">&lt;/h1&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="cp">&lt;%=</span> <span class="n">link_to</span> <span class="s2">&quot;New Contact&quot;</span><span class="p">,</span> <span class="n">new_contact_path</span> <span class="cp">%&gt;</span>
+</span><span class='line'><span class="nt">&lt;br&gt;</span>
+</span><span class='line'><span class="cp">&lt;%</span> <span class="vi">@contacts</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">contact</span><span class="o">|</span> <span class="cp">%&gt;</span>
+</span><span class='line'>  <span class="cp">&lt;%=</span> <span class="n">contact</span><span class="o">.</span><span class="n">name</span> <span class="cp">%&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;br&gt;</span>
+</span><span class='line'><span class="cp">&lt;%</span> <span class="k">end</span> <span class="cp">%&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><img src="/images/2014-04-16/17.png" title="Screenshot of stuff" alt="Screenshot of stuff"></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">HomeController</span> <span class="o">&lt;</span> <span class="no">ApplicationController</span>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">index</span>
+</span><span class='line'>    <span class="vi">@contacts</span> <span class="o">=</span> <span class="no">Contact</span><span class="o">.</span><span class="n">all</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><img src="/images/2014-04-16/19.png" title="Screenshot of stuff" alt="Screenshot of stuff"></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+</pre></td><td class='code'><pre><code class='console'><span class='line'><span class="gp">%</span> rake routes
+</span><span class='line'>
+</span><span class='line'><span class="go">      Prefix Verb   URI Pattern                  Controller#Action</span>
+</span><span class='line'><span class="go">        root GET    /                            home#index</span>
+</span><span class='line'><span class="go">    contacts GET    /contacts(.:format)          contacts#index</span>
+</span><span class='line'><span class="go">             POST   /contacts(.:format)          contacts#create</span>
+</span><span class='line'><span class="go"> new_contact GET    /contacts/new(.:format)      contacts#new</span>
+</span><span class='line'><span class="go">edit_contact GET    /contacts/:id/edit(.:format) contacts#edit</span>
+</span><span class='line'><span class="go">     contact GET    /contacts/:id(.:format)      contacts#show</span>
+</span><span class='line'><span class="go">             PATCH  /contacts/:id(.:format)      contacts#update</span>
+</span><span class='line'><span class="go">             PUT    /contacts/:id(.:format)      contacts#update</span>
+</span><span class='line'><span class="go">             DELETE /contacts/:id(.:format)      contacts#destro</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='html+erb'><span class='line'><span class="nt">&lt;h1&gt;</span>Yey<span class="nt">&lt;/h1&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="cp">&lt;%=</span> <span class="n">link_to</span> <span class="s2">&quot;New Contact&quot;</span><span class="p">,</span> <span class="n">new_contact_path</span> <span class="cp">%&gt;</span>
+</span><span class='line'><span class="nt">&lt;br&gt;</span>
+</span><span class='line'><span class="cp">&lt;%</span> <span class="vi">@contacts</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">contact</span><span class="o">|</span> <span class="cp">%&gt;</span>
+</span><span class='line'>  <span class="cp">&lt;%=</span> <span class="n">contact</span><span class="o">.</span><span class="n">name</span> <span class="cp">%&gt;</span>
+</span><span class='line'>  <span class="cp">&lt;%=</span> <span class="n">link_to</span> <span class="s2">&quot;Edit&quot;</span><span class="p">,</span> <span class="n">edit_contact_path</span><span class="p">(</span><span class="n">contact</span><span class="p">)</span> <span class="cp">%&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;br&gt;</span>
+</span><span class='line'><span class="cp">&lt;%</span> <span class="k">end</span> <span class="cp">%&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><img src="/images/2014-04-16/20.png" title="Screenshot of stuff" alt="Screenshot of stuff"></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">ContactsController</span> <span class="o">&lt;</span> <span class="no">ApplicationController</span>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">new</span>
+</span><span class='line'>    <span class="vi">@contact</span> <span class="o">=</span> <span class="no">Contact</span><span class="o">.</span><span class="n">new</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">create</span>
+</span><span class='line'>    <span class="vi">@contact</span> <span class="o">=</span> <span class="no">Contact</span><span class="o">.</span><span class="n">create</span> <span class="n">que_params</span>
+</span><span class='line'>    <span class="n">redirect_to</span> <span class="n">root_path</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">edit</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="kp">private</span>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">que_params</span>
+</span><span class='line'>    <span class="n">params</span><span class="o">.</span><span class="n">require</span><span class="p">(</span><span class="ss">:contact</span><span class="p">)</span><span class="o">.</span><span class="n">permit</span><span class="p">(</span><span class="ss">:name</span><span class="p">)</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p><img src="/images/2014-04-16/21.png" title="Screenshot of stuff" alt="Screenshot of stuff"></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='console'><span class='line'><span class="gp">%</span> touch app/views/contacts/edit.html.erb
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<figure class='code'><figcaption><span>+ erb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;h1&gt;</span>Edit Contact<span class="nt">&lt;/h1&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p><img src="/images/2014-04-16/22.png" title="Screenshot of stuff" alt="Screenshot of stuff"></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='html+erb'><span class='line'><span class="nt">&lt;h1&gt;</span>Edit Contact<span class="nt">&lt;/h1&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="cp">&lt;%=</span> <span class="n">form_for</span> <span class="vi">@contact</span> <span class="k">do</span> <span class="o">|</span><span class="n">f</span><span class="o">|</span> <span class="cp">%&gt;</span>
+</span><span class='line'>  <span class="cp">&lt;%=</span> <span class="n">f</span><span class="o">.</span><span class="n">label</span> <span class="ss">:name</span> <span class="cp">%&gt;</span>
+</span><span class='line'>  <span class="cp">&lt;%=</span> <span class="n">f</span><span class="o">.</span><span class="n">text_field</span> <span class="ss">:name</span> <span class="cp">%&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;br&gt;</span>
+</span><span class='line'>  <span class="cp">&lt;%=</span> <span class="n">f</span><span class="o">.</span><span class="n">submit</span> <span class="cp">%&gt;</span>
+</span><span class='line'><span class="cp">&lt;%</span> <span class="k">end</span> <span class="cp">%&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p><img src="/images/2014-04-16/23.png" title="Screenshot of stuff" alt="Screenshot of stuff"></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">ContactsController</span> <span class="o">&lt;</span> <span class="no">ApplicationController</span>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">new</span>
+</span><span class='line'>    <span class="vi">@contact</span> <span class="o">=</span> <span class="no">Contact</span><span class="o">.</span><span class="n">new</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">create</span>
+</span><span class='line'>    <span class="vi">@contact</span> <span class="o">=</span> <span class="no">Contact</span><span class="o">.</span><span class="n">create</span> <span class="n">que_params</span>
+</span><span class='line'>    <span class="n">redirect_to</span> <span class="n">root_path</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">edit</span>
+</span><span class='line'>    <span class="vi">@contact</span> <span class="o">=</span> <span class="no">Contact</span><span class="o">.</span><span class="n">find</span> <span class="n">params</span><span class="o">[</span><span class="ss">:id</span><span class="o">]</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="kp">private</span>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">que_params</span>
+</span><span class='line'>    <span class="n">params</span><span class="o">.</span><span class="n">require</span><span class="p">(</span><span class="ss">:contact</span><span class="p">)</span><span class="o">.</span><span class="n">permit</span><span class="p">(</span><span class="ss">:name</span><span class="p">)</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p><img src="/images/2014-04-16/25.png" title="Screenshot of stuff" alt="Screenshot of stuff"></p>
+
+<p><img src="/images/2014-04-16/26.png" title="Screenshot of stuff" alt="Screenshot of stuff"></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">ContactsController</span> <span class="o">&lt;</span> <span class="no">ApplicationController</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">new</span>
+</span><span class='line'>    <span class="vi">@contact</span> <span class="o">=</span> <span class="no">Contact</span><span class="o">.</span><span class="n">new</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">create</span>
+</span><span class='line'>    <span class="vi">@contact</span> <span class="o">=</span> <span class="no">Contact</span><span class="o">.</span><span class="n">create</span> <span class="n">que_params</span>
+</span><span class='line'>    <span class="n">redirect_to</span> <span class="n">root_path</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">edit</span>
+</span><span class='line'>    <span class="vi">@contact</span> <span class="o">=</span> <span class="no">Contact</span><span class="o">.</span><span class="n">find</span> <span class="n">params</span><span class="o">[</span><span class="ss">:id</span><span class="o">]</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">update</span>
+</span><span class='line'>    <span class="vi">@contact</span> <span class="o">=</span> <span class="no">Contact</span><span class="o">.</span><span class="n">find</span> <span class="n">params</span><span class="o">[</span><span class="ss">:id</span><span class="o">]</span>
+</span><span class='line'>    <span class="vi">@contact</span><span class="o">.</span><span class="n">update_attributes</span> <span class="n">que_params</span>
+</span><span class='line'>    <span class="n">redirect_to</span> <span class="n">root_path</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="kp">private</span>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">que_params</span>
+</span><span class='line'>    <span class="n">params</span><span class="o">.</span><span class="n">require</span><span class="p">(</span><span class="ss">:contact</span><span class="p">)</span><span class="o">.</span><span class="n">permit</span><span class="p">(</span><span class="ss">:name</span><span class="p">)</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p><img src="/images/2014-04-16/27.png" title="Screenshot of stuff" alt="Screenshot of stuff"></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+</pre></td><td class='code'><pre><code class='console'><span class='line'><span class="gp">%</span> rake routes
+</span><span class='line'>
+</span><span class='line'><span class="go">      Prefix Verb   URI Pattern                  Controller#Action</span>
+</span><span class='line'><span class="go">        root GET    /                            home#index</span>
+</span><span class='line'><span class="go">    contacts GET    /contacts(.:format)          contacts#index</span>
+</span><span class='line'><span class="go">             POST   /contacts(.:format)          contacts#create</span>
+</span><span class='line'><span class="go"> new_contact GET    /contacts/new(.:format)      contacts#new</span>
+</span><span class='line'><span class="go">edit_contact GET    /contacts/:id/edit(.:format) contacts#edit</span>
+</span><span class='line'><span class="go">     contact GET    /contacts/:id(.:format)      contacts#show</span>
+</span><span class='line'><span class="go">             PATCH  /contacts/:id(.:format)      contacts#update</span>
+</span><span class='line'><span class="go">             PUT    /contacts/:id(.:format)      contacts#update</span>
+</span><span class='line'><span class="go">             DELETE /contacts/:id(.:format)      contacts#destro</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='html+erb'><span class='line'><span class="nt">&lt;h1&gt;</span>Yey<span class="nt">&lt;/h1&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="cp">&lt;%=</span> <span class="n">link_to</span> <span class="s2">&quot;New Contact&quot;</span><span class="p">,</span> <span class="n">new_contact_path</span> <span class="cp">%&gt;</span>
+</span><span class='line'><span class="nt">&lt;br&gt;</span>
+</span><span class='line'><span class="cp">&lt;%</span> <span class="vi">@contacts</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">contact</span><span class="o">|</span> <span class="cp">%&gt;</span>
+</span><span class='line'>  <span class="cp">&lt;%=</span> <span class="n">link_to</span> <span class="n">contact</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">contact_path</span><span class="p">(</span><span class="n">contact</span><span class="p">)</span> <span class="cp">%&gt;</span>
+</span><span class='line'>  <span class="cp">&lt;%=</span> <span class="n">link_to</span> <span class="s2">&quot;Edit&quot;</span><span class="p">,</span> <span class="n">edit_contact_path</span><span class="p">(</span><span class="n">contact</span><span class="p">)</span> <span class="cp">%&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;br&gt;</span>
+</span><span class='line'><span class="cp">&lt;%</span> <span class="k">end</span> <span class="cp">%&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p><img src="/images/2014-04-16/28.png" title="Screenshot of stuff" alt="Screenshot of stuff"></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">ContactsController</span> <span class="o">&lt;</span> <span class="no">ApplicationController</span>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">show</span>
+</span><span class='line'>    <span class="vi">@contact</span> <span class="o">=</span> <span class="no">Contact</span><span class="o">.</span><span class="n">find</span> <span class="n">params</span><span class="o">[</span><span class="ss">:id</span><span class="o">]</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">new</span>
+</span><span class='line'>    <span class="vi">@contact</span> <span class="o">=</span> <span class="no">Contact</span><span class="o">.</span><span class="n">new</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">create</span>
+</span><span class='line'>    <span class="vi">@contact</span> <span class="o">=</span> <span class="no">Contact</span><span class="o">.</span><span class="n">create</span> <span class="n">que_params</span>
+</span><span class='line'>    <span class="n">redirect_to</span> <span class="n">root_path</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">edit</span>
+</span><span class='line'>    <span class="vi">@contact</span> <span class="o">=</span> <span class="no">Contact</span><span class="o">.</span><span class="n">find</span> <span class="n">params</span><span class="o">[</span><span class="ss">:id</span><span class="o">]</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">update</span>
+</span><span class='line'>    <span class="vi">@contact</span> <span class="o">=</span> <span class="no">Contact</span><span class="o">.</span><span class="n">find</span> <span class="n">params</span><span class="o">[</span><span class="ss">:id</span><span class="o">]</span>
+</span><span class='line'>    <span class="vi">@contact</span><span class="o">.</span><span class="n">update</span> <span class="n">que_params</span>
+</span><span class='line'>    <span class="n">redirect_to</span> <span class="n">root_path</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="kp">private</span>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">que_params</span>
+</span><span class='line'>    <span class="n">params</span><span class="o">.</span><span class="n">require</span><span class="p">(</span><span class="ss">:contact</span><span class="p">)</span><span class="o">.</span><span class="n">permit</span><span class="p">(</span><span class="ss">:name</span><span class="p">)</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p><img src="/images/2014-04-16/29.png" title="Screenshot of stuff" alt="Screenshot of stuff"></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='console'><span class='line'><span class="go">touch app/views/contacts/show.html.erb</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='html+erb'><span class='line'><span class="nt">&lt;h1&gt;</span>Show data<span class="nt">&lt;/h1&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="cp">&lt;%=</span> <span class="vi">@contact</span><span class="o">.</span><span class="n">name</span> <span class="cp">%&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="cp">&lt;%=</span> <span class="n">link_to</span> <span class="s2">&quot;Home&quot;</span><span class="p">,</span> <span class="n">root_path</span> <span class="cp">%&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+</pre></td><td class='code'><pre><code class='console'><span class='line'><span class="gp">%</span> rake routes
+</span><span class='line'>
+</span><span class='line'><span class="go">      Prefix Verb   URI Pattern                  Controller#Action</span>
+</span><span class='line'><span class="go">        root GET    /                            home#index</span>
+</span><span class='line'><span class="go">    contacts GET    /contacts(.:format)          contacts#index</span>
+</span><span class='line'><span class="go">             POST   /contacts(.:format)          contacts#create</span>
+</span><span class='line'><span class="go"> new_contact GET    /contacts/new(.:format)      contacts#new</span>
+</span><span class='line'><span class="go">edit_contact GET    /contacts/:id/edit(.:format) contacts#edit</span>
+</span><span class='line'><span class="go">     contact GET    /contacts/:id(.:format)      contacts#show</span>
+</span><span class='line'><span class="go">             PATCH  /contacts/:id(.:format)      contacts#update</span>
+</span><span class='line'><span class="go">             PUT    /contacts/:id(.:format)      contacts#update</span>
+</span><span class='line'><span class="go">             DELETE /contacts/:id(.:format)      contacts#destro</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='html+erb'><span class='line'><span class="nt">&lt;h1&gt;</span>Yey<span class="nt">&lt;/h1&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="cp">&lt;%=</span> <span class="n">link_to</span> <span class="s2">&quot;New Contact&quot;</span><span class="p">,</span> <span class="n">new_contact_path</span> <span class="cp">%&gt;</span>
+</span><span class='line'><span class="nt">&lt;br&gt;</span>
+</span><span class='line'><span class="cp">&lt;%</span> <span class="vi">@contacts</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">contact</span><span class="o">|</span> <span class="cp">%&gt;</span>
+</span><span class='line'>  <span class="cp">&lt;%=</span> <span class="n">link_to</span> <span class="n">contact</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">contact_path</span><span class="p">(</span><span class="n">contact</span><span class="p">)</span> <span class="cp">%&gt;</span>
+</span><span class='line'>  <span class="cp">&lt;%=</span> <span class="n">link_to</span> <span class="s2">&quot;Edit&quot;</span><span class="p">,</span> <span class="n">edit_contact_path</span><span class="p">(</span><span class="n">contact</span><span class="p">)</span> <span class="cp">%&gt;</span>
+</span><span class='line'>  <span class="cp">&lt;%=</span> <span class="n">link_to</span> <span class="s2">&quot;Delete&quot;</span><span class="p">,</span> <span class="n">contact_path</span><span class="p">(</span><span class="n">contact</span><span class="p">),</span> <span class="nb">method</span><span class="p">:</span> <span class="ss">:delete</span> <span class="cp">%&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;br&gt;</span>
+</span><span class='line'><span class="cp">&lt;%</span> <span class="k">end</span> <span class="cp">%&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p><img src="/images/2014-04-16/30.png" title="Screenshot of stuff" alt="Screenshot of stuff"></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">ContactsController</span> <span class="o">&lt;</span> <span class="no">ApplicationController</span>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">show</span>
+</span><span class='line'>    <span class="vi">@contact</span> <span class="o">=</span> <span class="no">Contact</span><span class="o">.</span><span class="n">find</span> <span class="n">params</span><span class="o">[</span><span class="ss">:id</span><span class="o">]</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">new</span>
+</span><span class='line'>    <span class="vi">@contact</span> <span class="o">=</span> <span class="no">Contact</span><span class="o">.</span><span class="n">new</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">create</span>
+</span><span class='line'>    <span class="vi">@contact</span> <span class="o">=</span> <span class="no">Contact</span><span class="o">.</span><span class="n">create</span> <span class="n">que_params</span>
+</span><span class='line'>    <span class="n">redirect_to</span> <span class="n">root_path</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">edit</span>
+</span><span class='line'>    <span class="vi">@contact</span> <span class="o">=</span> <span class="no">Contact</span><span class="o">.</span><span class="n">find</span> <span class="n">params</span><span class="o">[</span><span class="ss">:id</span><span class="o">]</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">update</span>
+</span><span class='line'>    <span class="vi">@contact</span> <span class="o">=</span> <span class="no">Contact</span><span class="o">.</span><span class="n">find</span> <span class="n">params</span><span class="o">[</span><span class="ss">:id</span><span class="o">]</span>
+</span><span class='line'>    <span class="vi">@contact</span><span class="o">.</span><span class="n">update_attributes</span> <span class="n">que_params</span>
+</span><span class='line'>    <span class="n">redirect_to</span> <span class="n">root_path</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">destroy</span>
+</span><span class='line'>    <span class="vi">@contact</span> <span class="o">=</span> <span class="no">Contact</span><span class="o">.</span><span class="n">find</span> <span class="n">params</span><span class="o">[</span><span class="ss">:id</span><span class="o">]</span>
+</span><span class='line'>    <span class="vi">@contact</span><span class="o">.</span><span class="n">delete</span>
+</span><span class='line'>    <span class="n">redirect_to</span> <span class="n">root_path</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="kp">private</span>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">que_params</span>
+</span><span class='line'>    <span class="n">params</span><span class="o">.</span><span class="n">require</span><span class="p">(</span><span class="ss">:contact</span><span class="p">)</span><span class="o">.</span><span class="n">permit</span><span class="p">(</span><span class="ss">:name</span><span class="p">)</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>
+<img src="/images/2014-04-16/31.png" title="Screenshot of stuff" alt="Screenshot of stuff"></p>
 </div>
   
   

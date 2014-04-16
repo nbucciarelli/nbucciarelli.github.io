@@ -4,7 +4,7 @@
   <title><![CDATA[Category: On | Nick Bucciarelli]]></title>
   <link href="http://nbucciarelli.github.io/blog/categories/on/atom.xml" rel="self"/>
   <link href="http://nbucciarelli.github.io/"/>
-  <updated>2014-04-16T16:30:17-04:00</updated>
+  <updated>2014-04-16T17:08:59-04:00</updated>
   <id>http://nbucciarelli.github.io/</id>
   <author>
     <name><![CDATA[Nick Bucciarelli]]></name>
@@ -18,28 +18,28 @@
     <link href="http://nbucciarelli.github.io/blog/2014/04/16/creating-a-basic-rails-application/"/>
     <updated>2014-04-16T14:27:08-04:00</updated>
     <id>http://nbucciarelli.github.io/blog/2014/04/16/creating-a-basic-rails-application</id>
-    <content type="html"><![CDATA[<pre><code>% cd ~/projects/
+    <content type="html"><![CDATA[<p><code>console
+% cd ~/projects/
 % mkdir contact_list
 % cd contact_list
 % touch .rvmrc
 % sub .
-</code></pre>
+</code></p>
 
-<br>
-
-
-<pre><code>```ruby    
+<p><code>ruby    
 rvm 2.1@contact_list --create
-```
-</code></pre>
+</code></p>
 
-<br>
-
+<p>``` console</p>
 
 <pre><code>% cd .
 </code></pre>
 
-<p>picture of RVM output here</p>
+<p>```</p>
+
+<p><img src="/images/2014-04-16/1_rvm_output.png" title="&lsquo;Screenshot of stuff&rsquo; &lsquo;Screenshot of stuff&rsquo;" ></p>
+
+<p>``` console</p>
 
 <pre><code>% gem install rails
 % rails new .
@@ -182,19 +182,23 @@ Depending on your version of ruby, you may need to install ruby rdoc/ri data:
 * bin/rails: spring inserted
 </code></pre>
 
-<p>rails server</p>
+<p>```</p>
 
-<p>screenshot of welcome aboard</p>
+<p><code>console
+% rails server
+</code></p>
+
+<p><img src="/images/2014-04-16/2_welcome_aboard.png" title="&lsquo;Screenshot of stuff&rsquo; &lsquo;Screenshot of stuff&rsquo;" ></p>
 
 <p><code>ruby
 Rails.application.routes.draw do
   root 'home#index'
 end
-</code></p>
+</code>
+<img src="/images/2014-04-16/3_no_home_controller.png" title="&lsquo;Screenshot of stuff&rsquo; &lsquo;Screenshot of stuff&rsquo;" ></p>
 
-<p>screenshot of uninitialized constant HomeController</p>
-
-<p>rails generate controller home</p>
+<p>``` console
+rails generate controller home</p>
 
 <pre><code>  create  app/controllers/home_controller.rb
   invoke  erb
@@ -212,27 +216,40 @@ end
   create      app/assets/stylesheets/home.css.scss
 </code></pre>
 
-<p>screenshot of The action &lsquo;index&rsquo; could not be found for HomeController</p>
+<p>```</p>
 
-<p>class HomeController &lt; ApplicationController
+<p><img src="/images/2014-04-16/4_no_index_in_home_controller.png" title="&lsquo;Screenshot of stuff&rsquo; &lsquo;Screenshot of stuff&rsquo;" ></p>
+
+<p><code>ruby
+class HomeController &lt; ApplicationController
   def index
   end
-end</p>
+end
+</code></p>
 
-<p>screenshot of missing template</p>
+<p><img src="/images/2014-04-16/5_missing_index_template.png" title="&lsquo;Screenshot of stuff&rsquo; &lsquo;Screenshot of stuff&rsquo;" ></p>
 
-<p>touch app/views/home/index.html.erb</p>
+<p><code>console
+touch app/views/home/index.html.erb
+</code></p>
+
+<p>```html</p>
 
 <h1>Yey</h1>
 
 
-<p>Rails.application.routes.draw do
+<p>```</p>
+
+<p>```ruby
+Rails.application.routes.draw do
   root &lsquo;home#index&rsquo;</p>
 
 <p>  resources :contacts
-end</p>
+end
+```</p>
 
-<p>rake routes</p>
+<p>```console
+% rake routes</p>
 
 <pre><code>  Prefix Verb   URI Pattern                  Controller#Action
     root GET    /                            home#index
@@ -249,14 +266,20 @@ edit_contact GET    /contacts/:id/edit(.:format) contacts#edit</p>
          DELETE /contacts/:id(.:format)      contacts#destro
 </code></pre>
 
-<p>in index.html.erb
+<p>```</p>
+
+<p>in index.html.erb</p>
+
+<p>```html+erb
   <h1>Yey</h1></p>
 
-<p>  &lt;%= link_to &ldquo;New Contact&rdquo;, new_contact_path %></p>
+<p>  &lt;%= link_to &ldquo;New Contact&rdquo;, new_contact_path %>
+```</p>
 
-<p>picture of uninitialized constant ContactsController</p>
+<p><img src="/images/2014-04-16/6_no_contacts_controller.png" title="&lsquo;Screenshot of stuff&rsquo; &lsquo;Screenshot of stuff&rsquo;" ></p>
 
-<p>rails generate controller contacts</p>
+<p>```console
+rails generate controller contacts</p>
 
 <pre><code>  create  app/controllers/contacts_controller.rb
   invoke  erb
@@ -274,16 +297,24 @@ edit_contact GET    /contacts/:id/edit(.:format) contacts#edit</p>
   create      app/assets/stylesheets/contacts.css.scss
 </code></pre>
 
-<p>screenshot of The action &lsquo;new&rsquo; could not be found for ContactsController</p>
+<p>```</p>
 
-<p>class ContactsController &lt; ApplicationController
+<p><img src="/images/2014-04-16/7_no_new_action_in_contacts_controller.png" title="&lsquo;Screenshot of stuff&rsquo; &lsquo;Screenshot of stuff&rsquo;" ></p>
+
+<p><code>ruby
+class ContactsController &lt; ApplicationController
   def new
   end
-end</p>
+end
+</code></p>
 
-<p>Screenshot of template missing</p>
+<p><img src="/images/2014-04-16/8_missing_new_template.png" title="&lsquo;Screenshot of stuff&rsquo; &lsquo;Screenshot of stuff&rsquo;" ></p>
 
-<p>touch app/views/contacts/new.html.erb</p>
+<p><code>console
+% touch app/views/contacts/new.html.erb
+</code></p>
+
+<p>``` html+erb</p>
 
 <h1>New Contact</h1>
 
@@ -293,22 +324,26 @@ end</p>
   &lt;%= f.text_field :name %>
   <br>
   &lt;%= f.submit %>
-&lt;% end %></p>
+&lt;% end %>
+```</p>
 
-<p>screenshot of First argument in form cannot contain nil or be empty</p>
+<p><img src="/images/2014-04-16/9.png" title="&lsquo;Screenshot of stuff&rsquo; &lsquo;Screenshot of stuff&rsquo;" ></p>
 
-<p>class ContactsController &lt; ApplicationController
+<p>``` ruby
+class ContactsController &lt; ApplicationController
   def new</p>
 
 <pre><code>@contact = Contact.new
 </code></pre>
 
 <p>  end
-end</p>
+end
+```</p>
 
-<p>screenshot of uninitialized constant ContactsController::Contact</p>
+<p><img src="/images/2014-04-16/10.png" title="&lsquo;Screenshot of stuff&rsquo; &lsquo;Screenshot of stuff&rsquo;" ></p>
 
-<p>rails generate model contact</p>
+<p>``` console
+% rails generate model contact</p>
 
 <pre><code>  invoke  active_record
   create    db/migrate/20140416191313_create_contacts.rb
@@ -318,9 +353,12 @@ end</p>
   create      test/fixtures/contacts.yml
 </code></pre>
 
-<p>screenshot of Migrations are pending.</p>
+<p>```</p>
 
-<p>class CreateContacts &lt; ActiveRecord::Migration
+<p><img src="/images/2014-04-16/11.png" title="&lsquo;Screenshot of stuff&rsquo; &lsquo;Screenshot of stuff&rsquo;" ></p>
+
+<p>``` ruby
+class CreateContacts &lt; ActiveRecord::Migration
   def change</p>
 
 <pre><code>create_table :contacts do |t|
@@ -330,20 +368,24 @@ end
 </code></pre>
 
 <p>  end
-end</p>
+end
+```</p>
 
-<p>rake db:migrate</p>
+<p>``` console
+% rake db:migrate</p>
 
 <p>== 20140416191313 CreateContacts: migrating ===================================
 &mdash; create_table(:contacts)
    &ndash;> 0.0014s
-== 20140416191313 CreateContacts: migrated (0.0015s) ==========================</p>
+== 20140416191313 CreateContacts: migrated (0.0015s) ==========================
+```</p>
 
-<p>screenshot of form</p>
+<p><img src="/images/2014-04-16/12.png" title="&lsquo;Screenshot of stuff&rsquo; &lsquo;Screenshot of stuff&rsquo;" ></p>
 
-<p>screenshot of The action &lsquo;create&rsquo; could not be found for ContactsController</p>
+<p><img src="/images/2014-04-16/13.png" title="&lsquo;Screenshot of stuff&rsquo; &lsquo;Screenshot of stuff&rsquo;" ></p>
 
-<p>class ContactsController &lt; ApplicationController
+<p>``` ruby
+class ContactsController &lt; ApplicationController
   def new</p>
 
 <pre><code>@contact = Contact.new
@@ -357,11 +399,13 @@ end</p>
 </code></pre>
 
 <p>  end
-end</p>
+end
+```</p>
 
-<p>screenshot of ActiveModel::ForbiddenAttributesError</p>
+<p><img src="/images/2014-04-16/14.png" title="&lsquo;Screenshot of stuff&rsquo; &lsquo;Screenshot of stuff&rsquo;" ></p>
 
-<p>class ContactsController &lt; ApplicationController
+<p>``` ruby
+class ContactsController &lt; ApplicationController
   def new</p>
 
 <pre><code>@contact = Contact.new
@@ -383,11 +427,13 @@ end</p>
 </code></pre>
 
 <p>  end
-end</p>
+end
+```</p>
 
-<p>screenshot of missing template</p>
+<p><img src="/images/2014-04-16/15.png" title="&lsquo;Screenshot of stuff&rsquo; &lsquo;Screenshot of stuff&rsquo;" ></p>
 
-<p>class ContactsController &lt; ApplicationController
+<p>``` ruby
+class ContactsController &lt; ApplicationController
   def new</p>
 
 <pre><code>@contact = Contact.new
@@ -410,9 +456,12 @@ redirect_to root_path
 </code></pre>
 
 <p>  end
-end</p>
+end
+```</p>
 
-<p>screenshot of yey with new button and no data</p>
+<p><img src="/images/2014-04-16/16.png" title="&lsquo;Screenshot of stuff&rsquo; &lsquo;Screenshot of stuff&rsquo;" ></p>
+
+<p>``` html+erb</p>
 
 <h1>Yey</h1>
 
@@ -425,22 +474,45 @@ end</p>
 <p>&lt;% @contacts.each do |contact| %>
   &lt;%= contact.name %>
   <br>
-&lt;% end %></p>
+&lt;% end %>
+```</p>
 
-<p>screenshot of undefined method .each for nil</p>
+<p><img src="/images/2014-04-16/17.png" title="&lsquo;Screenshot of stuff&rsquo; &lsquo;Screenshot of stuff&rsquo;" ></p>
 
-<p>class HomeController &lt; ApplicationController
+<p>``` ruby
+class HomeController &lt; ApplicationController
   def index</p>
 
 <pre><code>@contacts = Contact.all
 </code></pre>
 
 <p>  end
-end</p>
+end
+```</p>
 
-<p>screenshot of list of names</p>
+<p><img src="/images/2014-04-16/19.png" title="&lsquo;Screenshot of stuff&rsquo; &lsquo;Screenshot of stuff&rsquo;" ></p>
 
-<p>rake routes, return is up there!</p>
+<p>```console
+% rake routes</p>
+
+<pre><code>  Prefix Verb   URI Pattern                  Controller#Action
+    root GET    /                            home#index
+contacts GET    /contacts(.:format)          contacts#index
+         POST   /contacts(.:format)          contacts#create
+</code></pre>
+
+<p> new_contact GET    /contacts/new(.:format)      contacts#new
+edit_contact GET    /contacts/:id/edit(.:format) contacts#edit</p>
+
+<pre><code> contact GET    /contacts/:id(.:format)      contacts#show
+         PATCH  /contacts/:id(.:format)      contacts#update
+         PUT    /contacts/:id(.:format)      contacts#update
+         DELETE /contacts/:id(.:format)      contacts#destro
+</code></pre>
+
+<p>```</p>
+
+<p>``` html+erb</p>
 
 <h1>Yey</h1>
 
@@ -454,11 +526,13 @@ end</p>
   &lt;%= contact.name %>
   &lt;%= link_to &ldquo;Edit&rdquo;, edit_contact_path(contact) %>
   <br>
-&lt;% end %></p>
+&lt;% end %>
+```</p>
 
-<p>screenshot of The action &lsquo;edit&rsquo; could not be found</p>
+<p><img src="/images/2014-04-16/20.png" title="&lsquo;Screenshot of stuff&rsquo; &lsquo;Screenshot of stuff&rsquo;" ></p>
 
-<p>class ContactsController &lt; ApplicationController
+<p>``` ruby
+class ContactsController &lt; ApplicationController
   def new</p>
 
 <pre><code>@contact = Contact.new
@@ -484,16 +558,25 @@ redirect_to root_path
 </code></pre>
 
 <p>  end
-end</p>
+end
+```</p>
 
-<p>screenshot of missing template</p>
+<p><img src="/images/2014-04-16/21.png" title="&lsquo;Screenshot of stuff&rsquo; &lsquo;Screenshot of stuff&rsquo;" ></p>
 
-<p>touch app/views/contacts/edit.html.erb</p>
+<p><code>console
+% touch app/views/contacts/edit.html.erb
+</code></p>
+
+<p>``` html + erb</p>
 
 <h1>Edit Contact</h1>
 
 
-<p>screenshot of edit page</p>
+<p>```</p>
+
+<p><img src="/images/2014-04-16/22.png" title="&lsquo;Screenshot of stuff&rsquo; &lsquo;Screenshot of stuff&rsquo;" ></p>
+
+<p>``` html+erb</p>
 
 <h1>Edit Contact</h1>
 
@@ -503,11 +586,13 @@ end</p>
   &lt;%= f.text_field :name %>
   <br>
   &lt;%= f.submit %>
-&lt;% end %></p>
+&lt;% end %>
+```</p>
 
-<p>screenshot of  argument in form cannot contain nil or be empty</p>
+<p><img src="/images/2014-04-16/23.png" title="&lsquo;Screenshot of stuff&rsquo; &lsquo;Screenshot of stuff&rsquo;" ></p>
 
-<p>class ContactsController &lt; ApplicationController
+<p>``` ruby
+class ContactsController &lt; ApplicationController
   def new</p>
 
 <pre><code>@contact = Contact.new
@@ -537,13 +622,15 @@ redirect_to root_path
 </code></pre>
 
 <p>  end
-end</p>
+end
+```</p>
 
-<p>screenshot of working edit form</p>
+<p><img src="/images/2014-04-16/25.png" title="&lsquo;Screenshot of stuff&rsquo; &lsquo;Screenshot of stuff&rsquo;" ></p>
 
-<p>screenshot of The action &lsquo;update&rsquo; could not be found for ContactsController</p>
+<p><img src="/images/2014-04-16/26.png" title="&lsquo;Screenshot of stuff&rsquo; &lsquo;Screenshot of stuff&rsquo;" ></p>
 
-<p>class ContactsController &lt; ApplicationController</p>
+<p>``` ruby
+class ContactsController &lt; ApplicationController</p>
 
 <p>  def new</p>
 
@@ -583,11 +670,32 @@ redirect_to root_path
 </code></pre>
 
 <p>  end
-end</p>
+end
+```</p>
 
-<p>screenshot of working update</p>
+<p><img src="/images/2014-04-16/27.png" title="&lsquo;Screenshot of stuff&rsquo; &lsquo;Screenshot of stuff&rsquo;" ></p>
 
-<p>rake routes, return up there</p>
+<p>```console
+% rake routes</p>
+
+<pre><code>  Prefix Verb   URI Pattern                  Controller#Action
+    root GET    /                            home#index
+contacts GET    /contacts(.:format)          contacts#index
+         POST   /contacts(.:format)          contacts#create
+</code></pre>
+
+<p> new_contact GET    /contacts/new(.:format)      contacts#new
+edit_contact GET    /contacts/:id/edit(.:format) contacts#edit</p>
+
+<pre><code> contact GET    /contacts/:id(.:format)      contacts#show
+         PATCH  /contacts/:id(.:format)      contacts#update
+         PUT    /contacts/:id(.:format)      contacts#update
+         DELETE /contacts/:id(.:format)      contacts#destro
+</code></pre>
+
+<p>```</p>
+
+<p>``` html+erb</p>
 
 <h1>Yey</h1>
 
@@ -601,11 +709,13 @@ end</p>
   &lt;%= link_to contact.name, contact_path(contact) %>
   &lt;%= link_to &ldquo;Edit&rdquo;, edit_contact_path(contact) %>
   <br>
-&lt;% end %></p>
+&lt;% end %>
+```</p>
 
-<p>screenshot of The action &lsquo;show&rsquo; could not be found for ContactsController</p>
+<p><img src="/images/2014-04-16/28.png" title="&lsquo;Screenshot of stuff&rsquo; &lsquo;Screenshot of stuff&rsquo;" ></p>
 
-<p>class ContactsController &lt; ApplicationController
+<p>``` ruby
+class ContactsController &lt; ApplicationController
   def show</p>
 
 <pre><code>@contact = Contact.find params[:id]
@@ -651,20 +761,46 @@ redirect_to root_path
 </code></pre>
 
 <p>  end
-end</p>
+end
+```</p>
 
-<p>screenshot of missing show template</p>
+<p><img src="/images/2014-04-16/29.png" title="&lsquo;Screenshot of stuff&rsquo; &lsquo;Screenshot of stuff&rsquo;" ></p>
 
-<p>touch app/views/contacts/show.html.erb</p>
+<p><code>console
+touch app/views/contacts/show.html.erb
+</code></p>
+
+<p>``` html+erb</p>
 
 <h1>Show data</h1>
 
 
 <p>&lt;%= @contact.name %></p>
 
-<p>&lt;%= link_to &ldquo;Home&rdquo;, root_path %></p>
+<p>&lt;%= link_to &ldquo;Home&rdquo;, root_path %>
+```</p>
 
-<p>rake routes</p>
+<p>```console
+% rake routes</p>
+
+<pre><code>  Prefix Verb   URI Pattern                  Controller#Action
+    root GET    /                            home#index
+contacts GET    /contacts(.:format)          contacts#index
+         POST   /contacts(.:format)          contacts#create
+</code></pre>
+
+<p> new_contact GET    /contacts/new(.:format)      contacts#new
+edit_contact GET    /contacts/:id/edit(.:format) contacts#edit</p>
+
+<pre><code> contact GET    /contacts/:id(.:format)      contacts#show
+         PATCH  /contacts/:id(.:format)      contacts#update
+         PUT    /contacts/:id(.:format)      contacts#update
+         DELETE /contacts/:id(.:format)      contacts#destro
+</code></pre>
+
+<p>```</p>
+
+<p>``` html+erb</p>
 
 <h1>Yey</h1>
 
@@ -679,11 +815,13 @@ end</p>
   &lt;%= link_to &ldquo;Edit&rdquo;, edit_contact_path(contact) %>
   &lt;%= link_to &ldquo;Delete&rdquo;, contact_path(contact), method: :delete %>
   <br>
-&lt;% end %></p>
+&lt;% end %>
+```</p>
 
-<p>screenshot of no action</p>
+<p><img src="/images/2014-04-16/30.png" title="&lsquo;Screenshot of stuff&rsquo; &lsquo;Screenshot of stuff&rsquo;" ></p>
 
-<p>class ContactsController &lt; ApplicationController
+<p>``` ruby
+class ContactsController &lt; ApplicationController
   def show</p>
 
 <pre><code>@contact = Contact.find params[:id]
@@ -738,9 +876,9 @@ redirect_to root_path
 </code></pre>
 
 <p>  end
-end</p>
-
-<p>screenshot of no more stuff</p>
+end
+```
+<img src="/images/2014-04-16/31.png" title="&lsquo;Screenshot of stuff&rsquo; &lsquo;Screenshot of stuff&rsquo;" ></p>
 ]]></content>
   </entry>
   
