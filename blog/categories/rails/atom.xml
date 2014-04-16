@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Rails, | Nick Bucciarelli]]></title>
   <link href="http://nbucciarelli.github.io/blog/categories/rails/atom.xml" rel="self"/>
   <link href="http://nbucciarelli.github.io/"/>
-  <updated>2014-04-16T17:47:19-04:00</updated>
+  <updated>2014-04-16T18:12:45-04:00</updated>
   <id>http://nbucciarelli.github.io/</id>
   <author>
     <name><![CDATA[Nick Bucciarelli]]></name>
@@ -20,6 +20,8 @@
     <id>http://nbucciarelli.github.io/blog/2014/04/16/creating-a-basic-rails-application</id>
     <content type="html"><![CDATA[<p>I&rsquo;m going to teach you how to create a basic rails application STEP BY STEP. There will be images and code for each step as well. I hope this works for you guys.</p>
 
+<p>I know there are no tests written, but this is just for my students to create a &lsquo;scaffold&rsquo; of controller/models.</p>
+
 <p>There are a few dependencies as well:</p>
 
 <ul>
@@ -822,7 +824,7 @@ edit_contact GET    /contacts/:id/edit(.:format) contacts#edit</p>
 
 <p>```</p>
 
-<p>Let&rsquo;s show each individual contact now:</p>
+<p>Let&rsquo;s have a link that shows each individual contact now:</p>
 
 <p>``` html+erb</p>
 
@@ -841,7 +843,11 @@ edit_contact GET    /contacts/:id/edit(.:format) contacts#edit</p>
 &lt;% end %>
 ```</p>
 
+<p>Let&rsquo;s click our newly created links.</p>
+
 <p><img src="/images/2014-04-16/28.png" title="&lsquo;Screenshot of stuff&rsquo; &lsquo;Screenshot of stuff&rsquo;" ></p>
+
+<p>Cool. Let&rsquo;s create the show action.</p>
 
 <p>``` ruby
 class ContactsController &lt; ApplicationController
@@ -893,11 +899,17 @@ redirect_to root_path
 end
 ```</p>
 
+<p>Refresh the page and see what happens.</p>
+
 <p><img src="/images/2014-04-16/29.png" title="&lsquo;Screenshot of stuff&rsquo; &lsquo;Screenshot of stuff&rsquo;" ></p>
+
+<p>Let&rsquo;s go create our template.</p>
 
 <p><code>console
 touch app/views/contacts/show.html.erb
 </code></p>
+
+<p>Throw some stuff in there.</p>
 
 <p>``` html+erb</p>
 
@@ -908,6 +920,8 @@ touch app/views/contacts/show.html.erb
 
 <p>&lt;%= link_to &ldquo;Home&rdquo;, root_path %>
 ```</p>
+
+<p>Let&rsquo;s see what to do next!</p>
 
 <p>```console
 % rake routes</p>
@@ -929,6 +943,8 @@ edit_contact GET    /contacts/:id/edit(.:format) contacts#edit</p>
 
 <p>```</p>
 
+<p>Let&rsquo;s make a delete link</p>
+
 <p>``` html+erb</p>
 
 <h1>Yey</h1>
@@ -947,7 +963,11 @@ edit_contact GET    /contacts/:id/edit(.:format) contacts#edit</p>
 &lt;% end %>
 ```</p>
 
+<p>Let&rsquo;s click the link and see what happens.</p>
+
 <p><img src="/images/2014-04-16/30.png" title="&lsquo;Screenshot of stuff&rsquo; &lsquo;Screenshot of stuff&rsquo;" ></p>
+
+<p>Let&rsquo;s make a delete link!</p>
 
 <p>``` ruby
 class ContactsController &lt; ApplicationController
@@ -1006,8 +1026,11 @@ redirect_to root_path
 
 <p>  end
 end
-```
-<img src="/images/2014-04-16/31.png" title="&lsquo;Screenshot of stuff&rsquo; &lsquo;Screenshot of stuff&rsquo;" ></p>
+```</p>
+
+<p>All dooooooonnnnnnnnneeee!</p>
+
+<p><img src="/images/2014-04-16/31.png" title="&lsquo;Screenshot of stuff&rsquo; &lsquo;Screenshot of stuff&rsquo;" ></p>
 ]]></content>
   </entry>
   
@@ -1018,6 +1041,8 @@ end
     <id>http://nbucciarelli.github.io/blog/2014/04/16/creating-a-basic-rails-application</id>
     <content type="html"><![CDATA[<p>I&rsquo;m going to teach you how to create a basic rails application STEP BY STEP. There will be images and code for each step as well. I hope this works for you guys.</p>
 
+<p>I know there are no tests written, but this is just for my students to create a &lsquo;scaffold&rsquo; of controller/models.</p>
+
 <p>There are a few dependencies as well:</p>
 
 <ul>
@@ -1820,7 +1845,7 @@ edit_contact GET    /contacts/:id/edit(.:format) contacts#edit</p>
 
 <p>```</p>
 
-<p>Let&rsquo;s show each individual contact now:</p>
+<p>Let&rsquo;s have a link that shows each individual contact now:</p>
 
 <p>``` html+erb</p>
 
@@ -1839,7 +1864,11 @@ edit_contact GET    /contacts/:id/edit(.:format) contacts#edit</p>
 &lt;% end %>
 ```</p>
 
+<p>Let&rsquo;s click our newly created links.</p>
+
 <p><img src="/images/2014-04-16/28.png" title="&lsquo;Screenshot of stuff&rsquo; &lsquo;Screenshot of stuff&rsquo;" ></p>
+
+<p>Cool. Let&rsquo;s create the show action.</p>
 
 <p>``` ruby
 class ContactsController &lt; ApplicationController
@@ -1891,11 +1920,17 @@ redirect_to root_path
 end
 ```</p>
 
+<p>Refresh the page and see what happens.</p>
+
 <p><img src="/images/2014-04-16/29.png" title="&lsquo;Screenshot of stuff&rsquo; &lsquo;Screenshot of stuff&rsquo;" ></p>
+
+<p>Let&rsquo;s go create our template.</p>
 
 <p><code>console
 touch app/views/contacts/show.html.erb
 </code></p>
+
+<p>Throw some stuff in there.</p>
 
 <p>``` html+erb</p>
 
@@ -1906,6 +1941,8 @@ touch app/views/contacts/show.html.erb
 
 <p>&lt;%= link_to &ldquo;Home&rdquo;, root_path %>
 ```</p>
+
+<p>Let&rsquo;s see what to do next!</p>
 
 <p>```console
 % rake routes</p>
@@ -1927,6 +1964,8 @@ edit_contact GET    /contacts/:id/edit(.:format) contacts#edit</p>
 
 <p>```</p>
 
+<p>Let&rsquo;s make a delete link</p>
+
 <p>``` html+erb</p>
 
 <h1>Yey</h1>
@@ -1945,7 +1984,11 @@ edit_contact GET    /contacts/:id/edit(.:format) contacts#edit</p>
 &lt;% end %>
 ```</p>
 
+<p>Let&rsquo;s click the link and see what happens.</p>
+
 <p><img src="/images/2014-04-16/30.png" title="&lsquo;Screenshot of stuff&rsquo; &lsquo;Screenshot of stuff&rsquo;" ></p>
+
+<p>Let&rsquo;s make a delete link!</p>
 
 <p>``` ruby
 class ContactsController &lt; ApplicationController
@@ -2004,8 +2047,11 @@ redirect_to root_path
 
 <p>  end
 end
-```
-<img src="/images/2014-04-16/31.png" title="&lsquo;Screenshot of stuff&rsquo; &lsquo;Screenshot of stuff&rsquo;" ></p>
+```</p>
+
+<p>All dooooooonnnnnnnnneeee!</p>
+
+<p><img src="/images/2014-04-16/31.png" title="&lsquo;Screenshot of stuff&rsquo; &lsquo;Screenshot of stuff&rsquo;" ></p>
 ]]></content>
   </entry>
   
