@@ -4,7 +4,7 @@
   <title><![CDATA[Category: On | Nick Bucciarelli]]></title>
   <link href="http://nbucciarelli.github.io/blog/categories/on/atom.xml" rel="self"/>
   <link href="http://nbucciarelli.github.io/"/>
-  <updated>2014-04-16T16:27:59-04:00</updated>
+  <updated>2014-04-16T16:30:17-04:00</updated>
   <id>http://nbucciarelli.github.io/</id>
   <author>
     <name><![CDATA[Nick Bucciarelli]]></name>
@@ -186,12 +186,11 @@ Depending on your version of ruby, you may need to install ruby rdoc/ri data:
 
 <p>screenshot of welcome aboard</p>
 
-<pre><code>``` ruby
+<p><code>ruby
 Rails.application.routes.draw do
   root 'home#index'
 end
-```
-</code></pre>
+</code></p>
 
 <p>screenshot of uninitialized constant HomeController</p>
 

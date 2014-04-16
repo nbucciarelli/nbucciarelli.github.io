@@ -4,7 +4,7 @@
   <title><![CDATA[Nick Bucciarelli]]></title>
   <link href="http://nbucciarelli.github.io/atom.xml" rel="self"/>
   <link href="http://nbucciarelli.github.io/"/>
-  <updated>2014-04-16T16:27:59-04:00</updated>
+  <updated>2014-04-16T16:30:17-04:00</updated>
   <id>http://nbucciarelli.github.io/</id>
   <author>
     <name><![CDATA[Nick Bucciarelli]]></name>
@@ -186,12 +186,14 @@ Depending on your version of ruby, you may need to install ruby rdoc/ri data:
 
 <p>screenshot of welcome aboard</p>
 
-<pre><code>``` ruby
-Rails.application.routes.draw do
-  root 'home#index'
-end
-```
-</code></pre>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="no">Rails</span><span class="o">.</span><span class="n">application</span><span class="o">.</span><span class="n">routes</span><span class="o">.</span><span class="n">draw</span> <span class="k">do</span>
+</span><span class='line'>  <span class="n">root</span> <span class="s1">&#39;home#index&#39;</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
 
 <p>screenshot of uninitialized constant HomeController</p>
 
