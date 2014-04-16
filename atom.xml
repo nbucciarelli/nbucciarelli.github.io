@@ -4,7 +4,7 @@
   <title><![CDATA[Nick Bucciarelli]]></title>
   <link href="http://nbucciarelli.github.io/atom.xml" rel="self"/>
   <link href="http://nbucciarelli.github.io/"/>
-  <updated>2014-04-16T17:08:59-04:00</updated>
+  <updated>2014-04-16T17:40:38-04:00</updated>
   <id>http://nbucciarelli.github.io/</id>
   <author>
     <name><![CDATA[Nick Bucciarelli]]></name>
@@ -18,27 +18,45 @@
     <link href="http://nbucciarelli.github.io/blog/2014/04/16/creating-a-basic-rails-application/"/>
     <updated>2014-04-16T14:27:08-04:00</updated>
     <id>http://nbucciarelli.github.io/blog/2014/04/16/creating-a-basic-rails-application</id>
-    <content type="html"><![CDATA[<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+    <content type="html"><![CDATA[<p>I&rsquo;m going to teach you how to create a basic rails application STEP BY STEP. There will be images and code for each step as well. I hope this works for you guys.</p>
+
+<p>There are a few dependencies as well:</p>
+
+<ul>
+<li>rvm</li>
+<li>Sublime text</li>
+<li>Sublime text alias (sub) that will open your project folder</li>
+</ul>
+
+
+<p>In this first step, I want to create myself a new project folder. I am going to call this project &ldquo;contact_list&rdquo; as that is what we will be creating together, a 21st century Rolodex!</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
 </pre></td><td class='code'><pre><code class='console'><span class='line'><span class="gp">%</span> <span class="nb">cd</span> ~/projects/
 </span><span class='line'><span class="gp">%</span> mkdir contact_list
 </span><span class='line'><span class="gp">%</span> <span class="nb">cd </span>contact_list
-</span><span class='line'><span class="gp">%</span> touch .rvmrc
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This next will will set up dependencies. Anyone who has been in a ruby project for long enough will know that RVM is huge. We will be using that in this project. To make gemset management easier, we will be creating a &ldquo;.rvmrc&rdquo; file.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='console'><span class='line'><span class="gp">%</span> touch .rvmrc
 </span><span class='line'><span class="gp">%</span> sub .
 </span></code></pre></td></tr></table></div></figure>
 
 
-
+<p>Inside of that &ldquo;.rvmrc&rdquo; file, we need to create our specific gemset. This command will force your computer to create the gemset if you haven&rsquo;t yet.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">rvm</span> <span class="mi">2</span><span class="o">.</span><span class="mi">1</span><span class="vi">@contact_list</span> <span class="o">--</span><span class="n">create</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
-
+<p>This command should reload your current directory. The following screenshot will display what output you SHOULD get. If you do not get it, you need to cd out of your directory, then CD back in.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='console'><span class='line'><span class="gp">%</span> <span class="nb">cd</span> .
@@ -46,6 +64,8 @@
 
 
 <p><img src="http://nbucciarelli.github.io/images/2014-04-16/1_rvm_output.png" title="Screenshot of stuff" alt="Screenshot of stuff"></p>
+
+<p>Now, we are going to create our Rails project. To start, we need to install our Rails gem. After our gem is installed, we create a new project inside of our current directory with &lsquo;rails new .&rsquo;.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -328,7 +348,7 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-
+<p>Now, we&rsquo;re going to start our server to make sure everything is kosher. Let&rsquo;s start it and check it out!</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='console'><span class='line'><span class="gp">%</span> rails server
@@ -337,7 +357,11 @@
 
 <p></p>
 
+<p>We have a rails project. This is the screen you guys should be getting. This is the &ldquo;Welcome Aboard&rdquo; message you get when you start every project.</p>
+
 <p><img src="http://nbucciarelli.github.io/images/2014-04-16/2_welcome_aboard.png" title="Screenshot of stuff" alt="Screenshot of stuff"></p>
+
+<p>I want to get rid of the &ldquo;Welcome Aboard&rdquo; screen and start developing my own application, so I need to go into &ldquo;config/routes.rb&rdquo; and set up a root route. This will be where my application starts. For instance, if someone comes to my application at &ldquo;www.nickscontactlist.com&rdquo;, this root route will be how it starts. The following code is telling it to go to a &ldquo;Home&rdquo; Controller&rsquo;s &ldquo;Index&rdquo; action.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -348,7 +372,11 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
+<p>After this, I refresh my page to see what it tells me. Remember, you need to code a little then test the output.</p>
+
 <p><img src="http://nbucciarelli.github.io/images/2014-04-16/3_no_home_controller.png" title="Screenshot of stuff" alt="Screenshot of stuff"></p>
+
+<p>Awesome! This is the error I wanted. I need to initialize a Home Controller now! Remember, Controller&rsquo;s are generally pluralized! This one will be different. This is my landing page, hence &ldquo;Home&rdquo;</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -385,7 +413,11 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
+<p>Awesome. I have my Home controller created. Let&rsquo;s refresh the page and see what happens.</p>
+
 <p><img src="http://nbucciarelli.github.io/images/2014-04-16/4_no_index_in_home_controller.png" title="Screenshot of stuff" alt="Screenshot of stuff"></p>
+
+<p>This is a new error. I need to go into my newly created Home Controller to create my &ldquo;index&rdquo; action now.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -398,21 +430,25 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
+<p>Let&rsquo;s refresh the page and see what happens.</p>
+
 <p><img src="http://nbucciarelli.github.io/images/2014-04-16/5_missing_index_template.png" title="Screenshot of stuff" alt="Screenshot of stuff"></p>
+
+<p>I now need to create an index template. The template name matches the action name. Notice I am using the application to drive how I create things. Way cool.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='console'><span class='line'><span class="go">touch app/views/home/index.html.erb</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
-
+<p>Let&rsquo;s put something inside of the file as well.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;h1&gt;</span>Yey<span class="nt">&lt;/h1&gt;</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
-
+<p>Cool! Now, let&rsquo;s create some more routes so I can do more things.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -427,7 +463,7 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-
+<p>Let&rsquo;s look at all of the routes I just created.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -456,7 +492,7 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>in index.html.erb</p>
+<p>Let&rsquo;s throw some more content in index.html.erb. I want to be able to create new data now, so let&rsquo;s throw a &ldquo;New Contact&rdquo; link in there as well.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -467,7 +503,11 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
+<p>Let&rsquo;s refresh the page and see what happens. Let&rsquo;s ALSO click the &ldquo;New Contact&rdquo; link.</p>
+
 <p><img src="http://nbucciarelli.github.io/images/2014-04-16/6_no_contacts_controller.png" title="Screenshot of stuff" alt="Screenshot of stuff"></p>
+
+<p>Uh oh! I need to create a Contacts Controller now.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -504,7 +544,11 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
+<p>Let&rsquo;s refresh the page.</p>
+
 <p><img src="http://nbucciarelli.github.io/images/2014-04-16/7_no_new_action_in_contacts_controller.png" title="Screenshot of stuff" alt="Screenshot of stuff"></p>
+
+<p>My controller is created, now I need to create the new actions.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -517,14 +561,18 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
+<p>Cool, let&rsquo;s refresh the page.</p>
+
 <p><img src="http://nbucciarelli.github.io/images/2014-04-16/8_missing_new_template.png" title="Screenshot of stuff" alt="Screenshot of stuff"></p>
+
+<p>Now, I need to create a template to match my action name.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='console'><span class='line'><span class="gp">%</span> touch app/views/contacts/new.html.erb
 </span></code></pre></td></tr></table></div></figure>
 
 
-
+<p>Refresh the page and look at a blank screen! Now let&rsquo;s put some stuff inside of it.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -545,7 +593,11 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
+<p>I want to create a new contact, so I put a form in there. Let&rsquo;s fresh the page and see what happens.</p>
+
 <p><img src="http://nbucciarelli.github.io/images/2014-04-16/9.png" title="Screenshot of stuff" alt="Screenshot of stuff"></p>
+
+<p>I need to then go create some data to give to my form. I do that inside of the Controller. Let&rsquo;s do that!</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -560,7 +612,11 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
+<p>Awesome, data is created, let&rsquo;s refresh and see what happens.</p>
+
 <p><img src="http://nbucciarelli.github.io/images/2014-04-16/10.png" title="Screenshot of stuff" alt="Screenshot of stuff"></p>
+
+<p>Oh no! I am missing my Model! Let&rsquo;s create one.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -579,7 +635,11 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
+<p>Refresh the page and let&rsquo;s see what happens.</p>
+
 <p><img src="http://nbucciarelli.github.io/images/2014-04-16/11.png" title="Screenshot of stuff" alt="Screenshot of stuff"></p>
+
+<p>Oh, I created a Model and I forgot to add data to it so it&rsquo;s telling me to migrate. Let&rsquo;s go fill in the migration.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -600,7 +660,7 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-
+<p>Now, let&rsquo;s run the migration.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -617,9 +677,15 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
+<p>Wooo! Got some data fields. Let&rsquo;s fresh the page now:</p>
+
 <p><img src="http://nbucciarelli.github.io/images/2014-04-16/12.png" title="Screenshot of stuff" alt="Screenshot of stuff"></p>
 
+<p>Hell yeah. Let&rsquo;s fill in the form and click &ldquo;Create Contact&rdquo;.</p>
+
 <p><img src="http://nbucciarelli.github.io/images/2014-04-16/13.png" title="Screenshot of stuff" alt="Screenshot of stuff"></p>
+
+<p>Oh no! Let&rsquo;s go create a &ldquo;new&rdquo; action inside of our Contacts Controller.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -642,7 +708,11 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
+<p>Cool. Let&rsquo;s go back to the form and fill it out again. Click &ldquo;Create Contact&rdquo;.</p>
+
 <p><img src="http://nbucciarelli.github.io/images/2014-04-16/14.png" title="Screenshot of stuff" alt="Screenshot of stuff"></p>
+
+<p>Oooo. This is a new Rails thing. We need to add a method that whitelists parameters inside of our controller. We do it like this:</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -675,7 +745,11 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
+<p>Let&rsquo;s try to submit again.</p>
+
 <p><img src="http://nbucciarelli.github.io/images/2014-04-16/15.png" title="Screenshot of stuff" alt="Screenshot of stuff"></p>
+
+<p>Now, I need to either tell my action to render something, or I need to redirect. Let&rsquo;s redirect to our root page.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -710,7 +784,11 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
+<p>Refresh and fill out the form again.</p>
+
 <p><img src="http://nbucciarelli.github.io/images/2014-04-16/16.png" title="Screenshot of stuff" alt="Screenshot of stuff"></p>
+
+<p>It redirected correctly, but no data is showing up. Let&rsquo;s render out some data to the user.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -731,7 +809,11 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
+<p>Let&rsquo;s refresh the page.</p>
+
 <p><img src="http://nbucciarelli.github.io/images/2014-04-16/17.png" title="Screenshot of stuff" alt="Screenshot of stuff"></p>
+
+<p>I forgot to define my @contacts variable! Let&rsquo;s go do that inside of the Home controller.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -746,7 +828,11 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
+<p>Let&rsquo;s see what happens when I refresh.</p>
+
 <p><img src="http://nbucciarelli.github.io/images/2014-04-16/19.png" title="Screenshot of stuff" alt="Screenshot of stuff"></p>
+
+<p>Oooo data. Let&rsquo;s see what I want to do next:</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -775,7 +861,7 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-
+<p>Let&rsquo;s make an &ldquo;Edit&rdquo; link next for each contact.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>

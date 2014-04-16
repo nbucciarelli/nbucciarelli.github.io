@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Ruby | Nick Bucciarelli]]></title>
   <link href="http://nbucciarelli.github.io/blog/categories/ruby/atom.xml" rel="self"/>
   <link href="http://nbucciarelli.github.io/"/>
-  <updated>2014-04-16T17:08:59-04:00</updated>
+  <updated>2014-04-16T17:40:38-04:00</updated>
   <id>http://nbucciarelli.github.io/</id>
   <author>
     <name><![CDATA[Nick Bucciarelli]]></name>
@@ -18,19 +18,39 @@
     <link href="http://nbucciarelli.github.io/blog/2014/04/16/creating-a-basic-rails-application/"/>
     <updated>2014-04-16T14:27:08-04:00</updated>
     <id>http://nbucciarelli.github.io/blog/2014/04/16/creating-a-basic-rails-application</id>
-    <content type="html"><![CDATA[<p><code>console
+    <content type="html"><![CDATA[<p>I&rsquo;m going to teach you how to create a basic rails application STEP BY STEP. There will be images and code for each step as well. I hope this works for you guys.</p>
+
+<p>There are a few dependencies as well:</p>
+
+<ul>
+<li>rvm</li>
+<li>Sublime text</li>
+<li>Sublime text alias (sub) that will open your project folder</li>
+</ul>
+
+
+<p>In this first step, I want to create myself a new project folder. I am going to call this project &ldquo;contact_list&rdquo; as that is what we will be creating together, a 21st century Rolodex!</p>
+
+<p><code>console
 % cd ~/projects/
 % mkdir contact_list
 % cd contact_list
+</code></p>
+
+<p>This next will will set up dependencies. Anyone who has been in a ruby project for long enough will know that RVM is huge. We will be using that in this project. To make gemset management easier, we will be creating a &ldquo;.rvmrc&rdquo; file.
+<code>console
 % touch .rvmrc
 % sub .
 </code></p>
+
+<p>Inside of that &ldquo;.rvmrc&rdquo; file, we need to create our specific gemset. This command will force your computer to create the gemset if you haven&rsquo;t yet.</p>
 
 <p><code>ruby    
 rvm 2.1@contact_list --create
 </code></p>
 
-<p>``` console</p>
+<p>This command should reload your current directory. The following screenshot will display what output you SHOULD get. If you do not get it, you need to cd out of your directory, then CD back in.
+``` console</p>
 
 <pre><code>% cd .
 </code></pre>
@@ -39,7 +59,8 @@ rvm 2.1@contact_list --create
 
 <p><img src="/images/2014-04-16/1_rvm_output.png" title="&lsquo;Screenshot of stuff&rsquo; &lsquo;Screenshot of stuff&rsquo;" ></p>
 
-<p>``` console</p>
+<p>Now, we are going to create our Rails project. To start, we need to install our Rails gem. After our gem is installed, we create a new project inside of our current directory with &lsquo;rails new .&rsquo;.
+``` console</p>
 
 <pre><code>% gem install rails
 % rails new .
@@ -184,18 +205,28 @@ Depending on your version of ruby, you may need to install ruby rdoc/ri data:
 
 <p>```</p>
 
-<p><code>console
+<p>Now, we&rsquo;re going to start our server to make sure everything is kosher. Let&rsquo;s start it and check it out!
+<code>console
 % rails server
 </code></p>
 
+<p>We have a rails project. This is the screen you guys should be getting. This is the &ldquo;Welcome Aboard&rdquo; message you get when you start every project.</p>
+
 <p><img src="/images/2014-04-16/2_welcome_aboard.png" title="&lsquo;Screenshot of stuff&rsquo; &lsquo;Screenshot of stuff&rsquo;" ></p>
+
+<p>I want to get rid of the &ldquo;Welcome Aboard&rdquo; screen and start developing my own application, so I need to go into &ldquo;config/routes.rb&rdquo; and set up a root route. This will be where my application starts. For instance, if someone comes to my application at &ldquo;www.nickscontactlist.com&rdquo;, this root route will be how it starts. The following code is telling it to go to a &ldquo;Home&rdquo; Controller&rsquo;s &ldquo;Index&rdquo; action.</p>
 
 <p><code>ruby
 Rails.application.routes.draw do
   root 'home#index'
 end
-</code>
-<img src="/images/2014-04-16/3_no_home_controller.png" title="&lsquo;Screenshot of stuff&rsquo; &lsquo;Screenshot of stuff&rsquo;" ></p>
+</code></p>
+
+<p>After this, I refresh my page to see what it tells me. Remember, you need to code a little then test the output.</p>
+
+<p><img src="/images/2014-04-16/3_no_home_controller.png" title="&lsquo;Screenshot of stuff&rsquo; &lsquo;Screenshot of stuff&rsquo;" ></p>
+
+<p>Awesome! This is the error I wanted. I need to initialize a Home Controller now! Remember, Controller&rsquo;s are generally pluralized! This one will be different. This is my landing page, hence &ldquo;Home&rdquo;</p>
 
 <p>``` console
 rails generate controller home</p>
@@ -218,7 +249,11 @@ rails generate controller home</p>
 
 <p>```</p>
 
+<p>Awesome. I have my Home controller created. Let&rsquo;s refresh the page and see what happens.</p>
+
 <p><img src="/images/2014-04-16/4_no_index_in_home_controller.png" title="&lsquo;Screenshot of stuff&rsquo; &lsquo;Screenshot of stuff&rsquo;" ></p>
+
+<p>This is a new error. I need to go into my newly created Home Controller to create my &ldquo;index&rdquo; action now.</p>
 
 <p><code>ruby
 class HomeController &lt; ApplicationController
@@ -227,11 +262,17 @@ class HomeController &lt; ApplicationController
 end
 </code></p>
 
+<p>Let&rsquo;s refresh the page and see what happens.</p>
+
 <p><img src="/images/2014-04-16/5_missing_index_template.png" title="&lsquo;Screenshot of stuff&rsquo; &lsquo;Screenshot of stuff&rsquo;" ></p>
+
+<p>I now need to create an index template. The template name matches the action name. Notice I am using the application to drive how I create things. Way cool.</p>
 
 <p><code>console
 touch app/views/home/index.html.erb
 </code></p>
+
+<p>Let&rsquo;s put something inside of the file as well.</p>
 
 <p>```html</p>
 
@@ -240,6 +281,8 @@ touch app/views/home/index.html.erb
 
 <p>```</p>
 
+<p>Cool! Now, let&rsquo;s create some more routes so I can do more things.</p>
+
 <p>```ruby
 Rails.application.routes.draw do
   root &lsquo;home#index&rsquo;</p>
@@ -247,6 +290,8 @@ Rails.application.routes.draw do
 <p>  resources :contacts
 end
 ```</p>
+
+<p>Let&rsquo;s look at all of the routes I just created.</p>
 
 <p>```console
 % rake routes</p>
@@ -268,15 +313,18 @@ edit_contact GET    /contacts/:id/edit(.:format) contacts#edit</p>
 
 <p>```</p>
 
-<p>in index.html.erb</p>
+<p>Let&rsquo;s throw some more content in index.html.erb. I want to be able to create new data now, so let&rsquo;s throw a &ldquo;New Contact&rdquo; link in there as well.</p>
 
 <p>```html+erb
   <h1>Yey</h1></p>
 
 <p>  &lt;%= link_to &ldquo;New Contact&rdquo;, new_contact_path %>
-```</p>
+```
+Let&rsquo;s refresh the page and see what happens. Let&rsquo;s ALSO click the &ldquo;New Contact&rdquo; link.</p>
 
 <p><img src="/images/2014-04-16/6_no_contacts_controller.png" title="&lsquo;Screenshot of stuff&rsquo; &lsquo;Screenshot of stuff&rsquo;" ></p>
+
+<p>Uh oh! I need to create a Contacts Controller now.</p>
 
 <p>```console
 rails generate controller contacts</p>
@@ -299,7 +347,11 @@ rails generate controller contacts</p>
 
 <p>```</p>
 
+<p>Let&rsquo;s refresh the page.</p>
+
 <p><img src="/images/2014-04-16/7_no_new_action_in_contacts_controller.png" title="&lsquo;Screenshot of stuff&rsquo; &lsquo;Screenshot of stuff&rsquo;" ></p>
+
+<p>My controller is created, now I need to create the new actions.</p>
 
 <p><code>ruby
 class ContactsController &lt; ApplicationController
@@ -308,11 +360,17 @@ class ContactsController &lt; ApplicationController
 end
 </code></p>
 
+<p>Cool, let&rsquo;s refresh the page.</p>
+
 <p><img src="/images/2014-04-16/8_missing_new_template.png" title="&lsquo;Screenshot of stuff&rsquo; &lsquo;Screenshot of stuff&rsquo;" ></p>
+
+<p>Now, I need to create a template to match my action name.</p>
 
 <p><code>console
 % touch app/views/contacts/new.html.erb
 </code></p>
+
+<p>Refresh the page and look at a blank screen! Now let&rsquo;s put some stuff inside of it.</p>
 
 <p>``` html+erb</p>
 
@@ -327,7 +385,11 @@ end
 &lt;% end %>
 ```</p>
 
+<p>I want to create a new contact, so I put a form in there. Let&rsquo;s fresh the page and see what happens.</p>
+
 <p><img src="/images/2014-04-16/9.png" title="&lsquo;Screenshot of stuff&rsquo; &lsquo;Screenshot of stuff&rsquo;" ></p>
+
+<p>I need to then go create some data to give to my form. I do that inside of the Controller. Let&rsquo;s do that!</p>
 
 <p>``` ruby
 class ContactsController &lt; ApplicationController
@@ -340,7 +402,11 @@ class ContactsController &lt; ApplicationController
 end
 ```</p>
 
+<p>Awesome, data is created, let&rsquo;s refresh and see what happens.</p>
+
 <p><img src="/images/2014-04-16/10.png" title="&lsquo;Screenshot of stuff&rsquo; &lsquo;Screenshot of stuff&rsquo;" ></p>
+
+<p>Oh no! I am missing my Model! Let&rsquo;s create one.</p>
 
 <p>``` console
 % rails generate model contact</p>
@@ -355,7 +421,11 @@ end
 
 <p>```</p>
 
+<p>Refresh the page and let&rsquo;s see what happens.</p>
+
 <p><img src="/images/2014-04-16/11.png" title="&lsquo;Screenshot of stuff&rsquo; &lsquo;Screenshot of stuff&rsquo;" ></p>
+
+<p>Oh, I created a Model and I forgot to add data to it so it&rsquo;s telling me to migrate. Let&rsquo;s go fill in the migration.</p>
 
 <p>``` ruby
 class CreateContacts &lt; ActiveRecord::Migration
@@ -371,6 +441,8 @@ end
 end
 ```</p>
 
+<p>Now, let&rsquo;s run the migration.</p>
+
 <p>``` console
 % rake db:migrate</p>
 
@@ -380,9 +452,15 @@ end
 == 20140416191313 CreateContacts: migrated (0.0015s) ==========================
 ```</p>
 
+<p>Wooo! Got some data fields. Let&rsquo;s fresh the page now:</p>
+
 <p><img src="/images/2014-04-16/12.png" title="&lsquo;Screenshot of stuff&rsquo; &lsquo;Screenshot of stuff&rsquo;" ></p>
 
+<p>Hell yeah. Let&rsquo;s fill in the form and click &ldquo;Create Contact&rdquo;.</p>
+
 <p><img src="/images/2014-04-16/13.png" title="&lsquo;Screenshot of stuff&rsquo; &lsquo;Screenshot of stuff&rsquo;" ></p>
+
+<p>Oh no! Let&rsquo;s go create a &ldquo;new&rdquo; action inside of our Contacts Controller.</p>
 
 <p>``` ruby
 class ContactsController &lt; ApplicationController
@@ -402,7 +480,11 @@ class ContactsController &lt; ApplicationController
 end
 ```</p>
 
+<p>Cool. Let&rsquo;s go back to the form and fill it out again. Click &ldquo;Create Contact&rdquo;.</p>
+
 <p><img src="/images/2014-04-16/14.png" title="&lsquo;Screenshot of stuff&rsquo; &lsquo;Screenshot of stuff&rsquo;" ></p>
+
+<p>Oooo. This is a new Rails thing. We need to add a method that whitelists parameters inside of our controller. We do it like this:</p>
 
 <p>``` ruby
 class ContactsController &lt; ApplicationController
@@ -430,7 +512,11 @@ class ContactsController &lt; ApplicationController
 end
 ```</p>
 
+<p>Let&rsquo;s try to submit again.</p>
+
 <p><img src="/images/2014-04-16/15.png" title="&lsquo;Screenshot of stuff&rsquo; &lsquo;Screenshot of stuff&rsquo;" ></p>
+
+<p>Now, I need to either tell my action to render something, or I need to redirect. Let&rsquo;s redirect to our root page.</p>
 
 <p>``` ruby
 class ContactsController &lt; ApplicationController
@@ -459,7 +545,11 @@ redirect_to root_path
 end
 ```</p>
 
+<p>Refresh and fill out the form again.</p>
+
 <p><img src="/images/2014-04-16/16.png" title="&lsquo;Screenshot of stuff&rsquo; &lsquo;Screenshot of stuff&rsquo;" ></p>
+
+<p>It redirected correctly, but no data is showing up. Let&rsquo;s render out some data to the user.</p>
 
 <p>``` html+erb</p>
 
@@ -475,9 +565,12 @@ end
   &lt;%= contact.name %>
   <br>
 &lt;% end %>
-```</p>
+```
+Let&rsquo;s refresh the page.</p>
 
 <p><img src="/images/2014-04-16/17.png" title="&lsquo;Screenshot of stuff&rsquo; &lsquo;Screenshot of stuff&rsquo;" ></p>
+
+<p>I forgot to define my @contacts variable! Let&rsquo;s go do that inside of the Home controller.</p>
 
 <p>``` ruby
 class HomeController &lt; ApplicationController
@@ -490,7 +583,11 @@ class HomeController &lt; ApplicationController
 end
 ```</p>
 
+<p>Let&rsquo;s see what happens when I refresh.</p>
+
 <p><img src="/images/2014-04-16/19.png" title="&lsquo;Screenshot of stuff&rsquo; &lsquo;Screenshot of stuff&rsquo;" ></p>
+
+<p>Oooo data. Let&rsquo;s see what I want to do next:</p>
 
 <p>```console
 % rake routes</p>
@@ -511,6 +608,8 @@ edit_contact GET    /contacts/:id/edit(.:format) contacts#edit</p>
 </code></pre>
 
 <p>```</p>
+
+<p>Let&rsquo;s make an &ldquo;Edit&rdquo; link next for each contact.</p>
 
 <p>``` html+erb</p>
 
