@@ -23,7 +23,7 @@ Now, I am in better shape then I was in before (a WHOLE lot better), but there a
 
 Not only am I going to follow this regimen, two of my other friends are doing this with me. One to keep me accountable for every misstep and another to train and help better his habits as well.
 
-DIET. MAN, DIET. I am not talking about eating salads every meal and cutting all kinds of calories. Your diet is what you eat on a day to day basis. My diet has been absolute shit and needs to change. The majority of body transformations aren't from exercise, they're from a strict diet of healthy foods. In a follow up article I will post the specific changes in my diet. In short thogh, we are eating infinitely healthier - less for enjoyment and more for health.
+DIET. MAN, DIET. I am not talking about eating salads every meal and cutting all kinds of calories. Your diet is what you eat on a day to day basis. My diet has been absolute shit and needs to change. The majority of body transformations aren't from exercise, they're from a strict diet of healthy foods.  In short, we are eating infinitely healthier - less for enjoyment and more for health.
 
 Exercise - I am still keeping to a very strict exercise routine, just changing how often I work out. 2 days on, 1 day off. 
 
