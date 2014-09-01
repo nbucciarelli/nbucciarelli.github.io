@@ -1,0 +1,19 @@
+---
+layout: post
+title: "Day 1"
+date: 2014-09-01 11:15:46 -0400
+comments: true
+categories: Workout
+---
+
+Here we go. 
+
+Starting weight: 185.0lbs. 
+
+I have done the breakfast meals (egg whites and oats) and did the cardio already (20 minutes of running). I am sweating profusely because I decided to take my dog for a run. Apparently she is way out of shape. So we're adding one more creature to the lifestyle mix: my dog. We ran 3.5 kilometers. She's slowin' me down!
+
+{% img /images/2014-09-01-day-1/abby_tired.jpg 'Abby is tired.' 'Abby is tired.' %}
+
+I was supposed to take before pictures, but I forgot. I will take those as soon as I cool down.
+
+{% img /images/2014-09-01-day-1/after_run.jpg 'After run' 'After run' class='day_1_after_run' %}
