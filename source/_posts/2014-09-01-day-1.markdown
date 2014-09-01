@@ -6,6 +6,8 @@ comments: true
 categories: Workout
 ---
 
+[Day 1 - Legs](http://www.bodybuilding.com/fun/kris-gethin-12-week-daily-trainer-week-1-day-1.html)
+
 Here we go. 
 
 Starting weight: 185.0lbs. 
@@ -17,3 +19,4 @@ I have done the breakfast meals (egg whites and oats) and did the cardio already
 I was supposed to take before pictures, but I forgot. I will take those as soon as I cool down.
 
 {% img /images/2014-09-01-day-1/after_run.jpg 'After run' 'After run' class='day_1_after_run' %}
+
