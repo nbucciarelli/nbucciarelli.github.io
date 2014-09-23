@@ -3,7 +3,7 @@ layout: post
 title: "Week 1 in Review"
 date: 2014-09-08 12:06:26 -0400
 comments: true
-categories: Work out
+categories: Workout, 26+
 ---
 
 Hey guys, I'm back to review my first week on my new workout/diet regimen. First, the progress:

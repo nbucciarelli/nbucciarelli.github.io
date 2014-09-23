@@ -3,7 +3,7 @@ layout: post
 title: "Building better habits."
 date: 2014-08-31 21:57:30 -0400
 comments: true
-categories: The Iron Yard, Workout, Motivation
+categories: The Iron Yard, Workout, Motivation, 26+
 ---
 
 I have had the priveledge of being a part of a company that not only wants me to progress in my career, but personally as well. To do this, we put together 2 projects that do exactly that. 1 - do something, in short, that helps the company. 2 - do something that helps you personally. We are free to do whatever we want that falls within those broad scopes.
