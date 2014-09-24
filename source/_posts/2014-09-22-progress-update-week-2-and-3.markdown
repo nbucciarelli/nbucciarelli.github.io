@@ -3,7 +3,7 @@ layout: post
 title: "Progress Update - Week 2 and 3"
 date: 2014-09-22 20:54:32 -0400
 comments: true
-categories: Work out, 26+
+categories: Work out, 26+, Health, Fitness
 ---
 
 ### Week 2 Weigh In

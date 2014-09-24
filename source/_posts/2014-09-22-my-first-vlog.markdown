@@ -3,7 +3,7 @@ layout: post
 title: "My First VLog! Week 2 - Day 12"
 date: 2014-09-22 20:41:42 -0400
 comments: true
-categories: Work out, 26+
+categories: Work out, 26+, Health, Fitness
 ---
 
 [![Week 2 - Day 12](http://img.youtube.com/vi/lWZ4sgRFqoo/0.jpg)](http://www.youtube.com/watch?v=lWZ4sgRFqoo)

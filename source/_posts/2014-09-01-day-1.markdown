@@ -3,7 +3,7 @@ layout: post
 title: "Day 1"
 date: 2014-09-01 11:15:46 -0400
 comments: true
-categories: Workout, 26+
+categories: Workout, 26+, Health, Fitness
 ---
 
 [Day 1 - Legs](http://www.bodybuilding.com/fun/kris-gethin-12-week-daily-trainer-week-1-day-1.html)
