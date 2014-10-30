@@ -4,7 +4,7 @@
   <title><![CDATA[Category: On | Nick Bucciarelli]]></title>
   <link href="http://nbucciarelli.github.io/blog/categories/on/atom.xml" rel="self"/>
   <link href="http://nbucciarelli.github.io/"/>
-  <updated>2014-10-02T11:07:24-04:00</updated>
+  <updated>2014-10-30T14:18:03-05:00</updated>
   <id>http://nbucciarelli.github.io/</id>
   <author>
     <name><![CDATA[Nick Bucciarelli]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Creating a Basic Rails Application]]></title>
     <link href="http://nbucciarelli.github.io/blog/2014/04/16/creating-a-basic-rails-application/"/>
-    <updated>2014-04-16T14:27:08-04:00</updated>
+    <updated>2014-04-16T13:27:08-05:00</updated>
     <id>http://nbucciarelli.github.io/blog/2014/04/16/creating-a-basic-rails-application</id>
     <content type="html"><![CDATA[<p>I&rsquo;m going to teach you how to create a basic rails application STEP BY STEP. There will be images and code for each step as well. I hope this works for you guys.</p>
 
