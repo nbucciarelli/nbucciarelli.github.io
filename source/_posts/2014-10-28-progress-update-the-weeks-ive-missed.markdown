@@ -8,7 +8,7 @@ categories: Work out, 26+, Health, Fitness
 
 {% img /images/2014-10-28-progress-update-the-weeks-ive-missed/belt.jpg "Belt" "Belt" %}
 
-My thumb is where I was at in January.
+My thumb is where I was at in January. I need to buy some new pants.
 
 January: <strong>220.0</strong>
 
