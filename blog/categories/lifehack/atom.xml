@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Lifehack, | Nick Bucciarelli]]></title>
+  <link href="http://nbucciarelli.github.io/blog/categories/lifehack/atom.xml" rel="self"/>
+  <link href="http://nbucciarelli.github.io/"/>
+  <updated>2014-11-17T13:25:19-05:00</updated>
+  <id>http://nbucciarelli.github.io/</id>
+  <author>
+    <name><![CDATA[Nick Bucciarelli]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Lifehack: @@ and @@@ Shortcuts]]></title>
+    <link href="http://nbucciarelli.github.io/blog/2014/11/17/lifehack-at-at-and-at-at-at-shortcuts/"/>
+    <updated>2014-11-17T13:21:46-05:00</updated>
+    <id>http://nbucciarelli.github.io/blog/2014/11/17/lifehack-at-at-and-at-at-at-shortcuts</id>
+    <content type="html"><![CDATA[<p>This is a major lifehack I&rsquo;ve used the past few years that you all may want to consider, on your phones, make the following shortcuts:</p>
+
+<ul>
+<li>@@</li>
+<li>@@@</li>
+</ul>
+
+
+<p>and make them display the following:</p>
+
+<ul>
+<li>email</li>
+<li>address</li>
+</ul>
+
+
+<p>Frequently I have family members asking for my address, while others are texting me asking for my email.</p>
+
+<p>Just a handy lifehack that I&rsquo;ve used hundreds of times!</p>
+]]></content>
+  </entry>
+  
+</feed>
